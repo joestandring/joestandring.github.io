@@ -24890,3 +24890,9 @@ div.ant-typography-edit-content.ant-typography-rtl {
 body {
   font-family: 'Libre Franklin', sans-serif;
 }
+.social-icon {
+  color: #f2f2f2;
+  font-size: 33px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
