@@ -12,7 +12,7 @@ const { Title } = Typography;
 function Nav() {
   return (
     <Row>
-      <Col span={8}>
+      <Col flex={1}>
         <Title
           level={2}
           style={{
@@ -25,11 +25,12 @@ function Nav() {
         </Title>
       </Col>
 
-      <Col span={8}>
+      <Col>
         <Menu
           theme="dark"
           mode="horizontal"
           selectedKeys="about"
+          style={{ justifyContent: 'center' }}
         >
           <Menu.Item key="about">About</Menu.Item>
           <Menu.Item key="projects">Projects</Menu.Item>
@@ -37,7 +38,7 @@ function Nav() {
         </Menu>
       </Col>
 
-      <Col span={8}>
+      <Col flex={1} style={{ textAlign: 'right' }}>
         <GithubFilled className="social-icon" />
         <LinkedinFilled className="social-icon" />
         <TwitterCircleFilled className="social-icon" style={{ marginRight: '10.5px' }} />
