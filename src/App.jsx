@@ -2,6 +2,7 @@ import React from 'react';
 import { Layout } from 'antd';
 import './App.css';
 import Nav from './components/Nav';
+import About from './components/About';
 
 const { Header, Content } = Layout;
 
@@ -12,8 +13,8 @@ function App() {
         <Nav />
       </Header>
 
-      <Content>
-        <p>content</p>
+      <Content style={{ padding: '30px' }}>
+        <About />
       </Content>
     </Layout>
   );
