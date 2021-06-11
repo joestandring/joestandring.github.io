@@ -39,9 +39,15 @@ function Nav() {
       </Col>
 
       <Col flex={1} style={{ textAlign: 'right' }}>
-        <GithubFilled className="social-icon" />
-        <LinkedinFilled className="social-icon" />
-        <TwitterCircleFilled className="social-icon" style={{ marginRight: '10.5px' }} />
+        <a target="_blank" href="https://github.com/joestandring" rel="noreferrer">
+          <GithubFilled className="social-icon" />
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/joestandring" rel="noreferrer">
+          <LinkedinFilled className="social-icon" />
+        </a>
+        <a target="_blank" href="https://twitter.com/pandaontoast" rel="noreferrer">
+          <TwitterCircleFilled className="social-icon" style={{ marginRight: '10.5px' }} />
+        </a>
       </Col>
     </Row>
   );
