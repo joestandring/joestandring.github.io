@@ -12,33 +12,43 @@ const { Title } = Typography;
 function Nav() {
   return (
     <Row>
-      <Col flex={1}>
+      <Col span={8}>
         <Title
           level={2}
-          style={{
-            color: '#f2f2f2',
-            marginTop: '10.5px',
-            marginLeft: '10.5px',
-          }}
+          style={{ color: '#f2f2f2f2', marginTop: '10.5px', marginLeft: '25px' }}
         >
           Joe Standring
         </Title>
       </Col>
 
-      <Col>
+      <Col flex={1}>
         <Menu
           theme="dark"
           mode="horizontal"
-          selectedKeys="about"
-          style={{ justifyContent: 'center' }}
+          className="nav-menu"
         >
-          <Menu.Item key="about">About</Menu.Item>
-          <Menu.Item key="projects">Projects</Menu.Item>
-          <Menu.Item key="blog">Blog</Menu.Item>
+          <Menu.Item
+            className="nav-item"
+            key="about"
+          >
+            About
+          </Menu.Item>
+          <Menu.Item
+            className="nav-item"
+            key="projects"
+          >
+            Projects
+          </Menu.Item>
+          <Menu.Item
+            className="nav-item"
+            key="blog"
+          >
+            Blog
+          </Menu.Item>
         </Menu>
       </Col>
 
-      <Col flex={1} style={{ textAlign: 'right' }}>
+      <Col span={8} className="align-right">
         <a target="_blank" href="https://github.com/joestandring" rel="noreferrer">
           <GithubFilled className="social-icon" />
         </a>
@@ -46,7 +56,7 @@ function Nav() {
           <LinkedinFilled className="social-icon" />
         </a>
         <a target="_blank" href="https://twitter.com/pandaontoast" rel="noreferrer">
-          <TwitterCircleFilled className="social-icon" style={{ marginRight: '10.5px' }} />
+          <TwitterCircleFilled className="social-icon social-margin" />
         </a>
       </Col>
     </Row>

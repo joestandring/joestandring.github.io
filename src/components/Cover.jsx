@@ -6,25 +6,16 @@ const { Title } = Typography;
 
 function Cover() {
   return (
-    <div
-      style={{
-        backgroundColor: '#000000',
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        flexDirection: 'column',
-      }}
-    >
+    <div className="cover">
       <Title style={{ color: '#f2f2f2', textAlign: 'center' }}>
         <div>
           Hi! I&apos;m
-          <span style={{ color: '#3D9970' }}> Joe</span>
+          <span className="green"> Joe</span>
           .
         </div>
         <div>
           I&apos;m a
-          <span style={{ color: '#3D9970' }}> full-stack </span>
+          <span className="green"> full-stack </span>
           web developer.
         </div>
       </Title>
