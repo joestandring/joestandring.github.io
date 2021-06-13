@@ -24889,6 +24889,15 @@ div.ant-typography-edit-content.ant-typography-rtl {
 }
 body {
   font-family: 'Libre Franklin', sans-serif;
+  font-size: 12pt;
+}
+.header-style {
+  padding: 0;
+  position: fixed;
+  width: 100%;
+}
+.content-style {
+  padding: 50px;
 }
 .social-icon {
   color: #f2f2f2;
@@ -24920,4 +24929,57 @@ body {
 }
 .social-margin {
   margin-right: 25px;
+}
+.page-title {
+  text-align: center;
+}
+.new-line {
+  padding-bottom: 12px;
+}
+.vert-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+:root {
+  --background: #000;
+  --secondary: #3D9970;
+  --third: #295b45;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #005;
+}
+.blob {
+  background: linear-gradient(45deg, var(--primary) 0%, var(--secondary) 100%);
+  animation: morph 8s ease-in-out infinite;
+  height: 175px;
+  transition: all 1s ease-in-out;
+  width: 175px;
+  position: absolute;
+}
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+  }
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+  }
+  100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
+  }
+}
+.relative {
+  position: relative;
+}
+img {
+  border-radius: 50%;
+  width: 165px;
+  position: absolute;
 }
