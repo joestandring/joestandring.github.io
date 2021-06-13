@@ -21,6 +21,7 @@ body {
   padding: 0;
   position: fixed;
   width: 100%;
+  min-width: 856px;
 }
 
 .content-style {
@@ -74,10 +75,9 @@ body {
 }
 
 .vert-center {
-  display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  display: flex;
 }
 
 :root {
@@ -128,4 +128,24 @@ img {
   border-radius: 50%;
   width: 165px;
   position: absolute;
+}
+
+.flex {
+  display: flex;
+}
+
+.about-row {
+  display: flex;
+  min-height: 180px;
+  flex-flow: nowrap;
+}
+
+.tab-style {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.skill-icons {
+  font-size: 64px;
+  margin: 16px;
 }
