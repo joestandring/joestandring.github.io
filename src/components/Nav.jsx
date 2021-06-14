@@ -35,9 +35,9 @@ function Nav() {
           </Menu.Item>
           <Menu.Item
             className="nav-item"
-            key="projects"
+            key="portfolio"
           >
-            Projects
+            Portfolio
           </Menu.Item>
           <Menu.Item
             className="nav-item"

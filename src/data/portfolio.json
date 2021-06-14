@@ -1,0 +1,35 @@
+[
+  {
+    "name": "dwm-bar",
+    "thumb": "portfolio/dwm-bar.png",
+    "org": "Independent",
+    "start": "May 2019",
+    "end": "Present",
+    "desc": "A modular statusbar for the DWM window manager written in POSIX-compliant shell script. Featured on suckless.org with over 200 stars on GitHub. Including features such as weather, time, Spotify, and network.",
+    "link": "https://github.com/joestandring/dwm-bar",
+    "tags": [
+      "BASH/Shell",
+      "Git",
+      "GNU/Linux",
+      "Vim",
+      "Documentation"
+    ]
+  },
+  {
+    "name": "3D Pathfinding",
+    "thumb": "portfolio/pathfinding.png",
+    "org": "Coventry University",
+    "start": "Januray 2021",
+    "end": "May 2021",
+    "desc": "A test environment for comparing 3D pathfinding algorithms in a voxelized environment developed with C# and Unity. Used to gather data for a research project at Coventry University.",
+    "link": "https://github.com/joestandring/3D-pathfinding-demonstration",
+    "tags": [
+      "C#",
+      "Visual Studio Code",
+      "Unity",
+      "Documentation",
+      "Software development life-cycles",
+      "Object-oriented programming"
+    ]
+  }
+]

@@ -33,6 +33,7 @@ import {
   GiServerRack,
   GiDatabase,
   GiBookshelf,
+  GiBrickPile,
 } from 'react-icons/gi';
 import {
   GrMonitor,
@@ -51,7 +52,7 @@ function About() {
       <Row gutter={64} className="about-row min-width-180">
         <Col flex="220px" className="vert-center">
           <div className="blob" />
-          <img src={me} alt="This is me!" />
+          <img className="about-img" src={me} alt="This is me!" />
         </Col>
 
         <Col flex={1} className="vert-center">
@@ -74,7 +75,7 @@ function About() {
       </Row>
 
       <Tabs defaultActiveKey="languages" centered className="tab-style">
-        <TabPane tab="Programming languages" key="languages">
+        <TabPane tab="Programming Languages" key="languages">
           <Popover content="JavaScript">
             <SiJavascript className="skill-icons" style={{ color: '#F7DF1E' }} />
           </Popover>
@@ -177,6 +178,10 @@ function About() {
 
           <Popover content="Software development life-cycles">
             <GrCycle className="skill-icons" />
+          </Popover>
+
+          <Popover content="Object-oriented programming">
+            <GiBrickPile className="skill-icons" />
           </Popover>
         </TabPane>
       </Tabs>

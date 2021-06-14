@@ -24978,7 +24978,7 @@ body {
 .relative {
   position: relative;
 }
-img {
+.about-img {
   border-radius: 50%;
   width: 165px;
   position: absolute;
@@ -24992,10 +24992,56 @@ img {
   flex-flow: nowrap;
 }
 .tab-style {
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: center;
 }
 .skill-icons {
   font-size: 64px;
   margin: 16px;
+}
+.imglink {
+  text-align: center;
+}
+.projects {
+  margin: 10px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  position: relative;
+  transition: 0.5s ease;
+  display: inline-block;
+}
+.projects img {
+  display: block;
+  width: 350px;
+  height: 200px;
+  object-fit: cover;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  opacity: 0;
+  background-color: black;
+  transition: 0.5s ease;
+}
+.projects:hover {
+  transform: scale(1.1);
+}
+.projects:hover .overlay {
+  opacity: 1;
+}
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 1;
+}
+.search-bar {
+  padding-bottom: 15px;
 }
