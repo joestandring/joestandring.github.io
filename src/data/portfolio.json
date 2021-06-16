@@ -1,5 +1,28 @@
 [
   {
+    "name": "This Website",
+    "thumb": "portfolio/website.png",
+    "org": "Independent",
+    "start": "June 2021",
+    "end": "Present",
+    "desc": "The website you are currently using! A SPA written in React using JSON, ant-design, and canvas. Hosts my blog and projects.",
+    "link": "https://www.joestandring.com/",
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "React",
+      "npm",
+      "Git",
+      "ESLint",
+      "Visual Studio Code",
+      "JSON",
+      "Frontend development",
+      "Backend development",
+      "Object-oriented programming"
+    ]
+  },
+  {
     "name": "dwm-bar",
     "thumb": "portfolio/dwm-bar.png",
     "org": "Independent",
@@ -30,6 +53,158 @@
       "Documentation",
       "Software development life-cycles",
       "Object-oriented programming"
+    ]
+  },
+  {
+    "name": "Public Library",
+    "thumb": "portfolio/public-library.png",
+    "org": "Coventry University",
+    "start": "October 2020",
+    "end": "December 2020",
+    "desc": "A full-stack single page application for borrowing and lending books. Implements a Node.js API back-end and a React front-end.",
+    "link": "https://github.com/joestandring/library-frontend",
+    "tags": [
+      "JavaScript",
+      "HTML5",
+      "CSS3",
+      "React",
+      "Node.js",
+      "npm",
+      "Git",
+      "MySQL",
+      "ESLint",
+      "JSON",
+      "Frontend development",
+      "Backend development",
+      "API Development",
+      "Database management",
+      "Documentation",
+      "Software development life-cycles"
+    ]
+  },
+  {
+    "name": "nmenu",
+    "thumb": "portfolio/nmenu.png",
+    "org": "Independent",
+    "start": "October 2019",
+    "end": "October 2019",
+    "desc": "A TUI dialogue box system made in ncurses and POSIX-compliant shell script.",
+    "link": "https://github.com/joestandring/nmenu",
+    "tags": [
+      "C++",
+      "Git",
+      "GNU/Linux",
+      "Vim",
+      "Documentation"
+    ]
+  },
+  {
+    "name": "Android Privacy Guide",
+    "thumb": "portfolio/android.png",
+    "org": "Independent",
+    "start": "June 2020",
+    "end": "September 2020",
+    "desc": "A detailed, comprehensive guide for digital privacy on Android-based operating systems. Basic HTML and CSS.",
+    "link": "https://www.androidprivacyguide.com/",
+    "tags": [
+      "HTML5",
+      "CSS3",
+      "Git",
+      "Vim",
+      "Frontend development"
+    ]
+  },
+  {
+    "name": "Theatre Booking System",
+    "thumb": "portfolio/theatre.png",
+    "org": "Coventry University",
+    "start": "September 2020",
+    "end": "December 2020",
+    "desc": "A theatre booking system written in Node.js and Handlebars.",
+    "link": "https://github.com/joestandring/theatre-booking",
+    "tags": [
+      "JavaScript",
+      "BASH/Shell",
+      "HTML5",
+      "CSS3",
+      "Node.js",
+      "npm",
+      "Git",
+      "MySQL",
+      "GNU/Linux",
+      "ESLint",
+      "JSON",
+      "Frontend development",
+      "Backend development",
+      "Database Management",
+      "Documentation",
+      "Software development life-cycles"
+    ]
+  },
+  {
+    "name": "void-installer",
+    "thumb": "portfolio/void.png",
+    "org": "Independent",
+    "start": "November 2019",
+    "end": "May 2020",
+    "desc": "void-installer is a script that configures a Void Linux installation using my dotfiles.",
+    "link": "https://github.com/joestandring/void-installer",
+    "tags": [
+      "BASH/Shell",
+      "Git",
+      "GNU/Linux",
+      "Vim",
+      "Documentation"
+    ]
+  },
+  {
+    "name": "dotfiles",
+    "thumb": "portfolio/dotfiles.png",
+    "org": "Independent",
+    "start": "February 2020",
+    "end": "Present",
+    "desc": "Configurations for my Arch Linux install.",
+    "link": "https://github.com/joestandring/dotfiles",
+    "tags": [
+      "C++",
+      "BASH/Shell",
+      "Git",
+      "GNU/Linux",
+      "Vim",
+      "LaTeX",
+      "Documentation"
+    ]
+  },
+  {
+    "name": "countdown",
+    "thumb": "portfolio/countdown.png",
+    "org": "Independent",
+    "start": "April 2019",
+    "end": "May 2019",
+    "desc": "A shell countdown timer compatible with dwm-bar",
+    "link": "https://github.com/joestandring/countdown",
+    "tags": [
+      "BASH/Shell",
+      "Git",
+      "GNU/Linux",
+      "Vim",
+      "Documentation"
+    ]
+  },
+  {
+    "name": "alarm",
+    "thumb": "portfolio/alarm.png",
+    "org": "Independent",
+    "start": "January 2020",
+    "end": "January 2020",
+    "desc": "A shell script to play an alarm at a set time. Compatible with dwm-bar",
+    "link": "https://github.com/joestandring/alarm",
+    "tags": [
+      "BASH/Shell",
+      "Git",
+      "GNU/Linux",
+      "Vim",
+      "Documentation"
     ]
   }
 ]
