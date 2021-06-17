@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 /* eslint-disable consistent-return */
 import React, { useState } from 'react';
 import {
@@ -5,11 +7,11 @@ import {
   Input,
   Row,
 } from 'antd';
-import Data from '../data/portfolio.json';
+import Data from '../../data/portfolio.json';
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 
-function Portfolio() {
+function Portfolio(props) {
   const [search, setSearch] = useState(null);
 
   /*
@@ -62,6 +64,11 @@ function Portfolio() {
         size="large"
         onChange={(e) => handleChange(e)}
       />
+      <Text>
+        Searching projects tagged with:
+        {' '}
+        {props.selectedTag}
+      </Text>
       <Row className="vert-center">
         {projects}
       </Row>

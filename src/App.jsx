@@ -3,8 +3,7 @@ import { Layout } from 'antd';
 import './App.css';
 import Nav from './components/Nav';
 import Cover from './components/Cover';
-import About from './components/About';
-import Portfolio from './components/Portfolio';
+import PageContents from './components/content/PageContents';
 
 const { Header, Content } = Layout;
 
@@ -14,8 +13,7 @@ function App() {
       <Cover />
 
       <Content className="content-style">
-        <About />
-        <Portfolio />
+        <PageContents />
       </Content>
 
       <Header className="header-style">

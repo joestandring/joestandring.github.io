@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import {
   Typography,
@@ -40,12 +42,16 @@ import {
   GrCycle,
 } from 'react-icons/gr';
 
-import me from '../media/me.jpg';
+import me from '../../media/me.jpg';
 
 const { Title, Text } = Typography;
 const { TabPane } = Tabs;
 
-function About() {
+function About(props) {
+  const sendTag = (tag) => {
+    props.parentCallback(tag);
+  };
+
   return (
     <>
       <Title className="page-title">About me</Title>
@@ -77,111 +83,111 @@ function About() {
       <Tabs defaultActiveKey="languages" centered className="tab-style">
         <TabPane tab="Programming Languages" key="languages">
           <Popover content="JavaScript">
-            <SiJavascript className="skill-icons" style={{ color: '#F7DF1E' }} />
+            <SiJavascript onClick={() => sendTag('JavaScript')} className="skill-icons" style={{ color: '#F7DF1E' }} />
           </Popover>
 
           <Popover content="TypeScript">
-            <SiTypescript className="skill-icons" style={{ color: '#3178C6' }} />
+            <SiTypescript onClick={() => sendTag('TypeScript')} className="skill-icons" style={{ color: '#3178C6' }} />
           </Popover>
 
           <Popover content="C#">
-            <SiCsharp className="skill-icons" style={{ color: '#239120' }} />
+            <SiCsharp onClick={() => sendTag('C#')} className="skill-icons" style={{ color: '#239120' }} />
           </Popover>
 
           <Popover content="C/C++">
-            <SiCplusplus className="skill-icons" style={{ color: '#00599C' }} />
+            <SiCplusplus onClick={() => sendTag('C/C++')} className="skill-icons" style={{ color: '#00599C' }} />
           </Popover>
 
           <Popover content="BASH/Shell">
-            <SiGnubash className="skill-icons" style={{ color: '#4EAA25' }} />
+            <SiGnubash onClick={() => sendTag('BASH/Shell')} className="skill-icons" style={{ color: '#4EAA25' }} />
           </Popover>
 
           <Popover content="HTML5">
-            <SiHtml5 className="skill-icons" style={{ color: '#E34F26' }} />
+            <SiHtml5 onClick={() => sendTag('HTML5')} className="skill-icons" style={{ color: '#E34F26' }} />
           </Popover>
 
           <Popover content="CSS3">
-            <SiCss3 className="skill-icons" style={{ color: '#1572B6' }} />
+            <SiCss3 onClick={() => sendTag('CSS3')} className="skill-icons" style={{ color: '#1572B6' }} />
           </Popover>
         </TabPane>
 
         <TabPane tab="Software and Frameworks" key="software">
           <Popover content="React">
-            <SiReact className="skill-icons" style={{ color: '#61DAFB' }} />
+            <SiReact onClick={() => sendTag('React')} className="skill-icons" style={{ color: '#61DAFB' }} />
           </Popover>
 
           <Popover content="Node.js">
-            <SiNodeDotJs className="skill-icons" style={{ color: '#339933' }} />
+            <SiNodeDotJs onClick={() => sendTag('Node.js')} className="skill-icons" style={{ color: '#339933' }} />
           </Popover>
 
           <Popover content="npm">
-            <SiNpm className="skill-icons" style={{ color: '#CB3837' }} />
+            <SiNpm onClick={() => sendTag('npm')} className="skill-icons" style={{ color: '#CB3837' }} />
           </Popover>
 
           <Popover content="Git">
-            <SiGit className="skill-icons" style={{ color: '#F05032' }} />
+            <SiGit onClick={() => sendTag('Git')} className="skill-icons" style={{ color: '#F05032' }} />
           </Popover>
 
           <Popover content="MySQL">
-            <SiMysql className="skill-icons" style={{ color: '#4479A1' }} />
+            <SiMysql onClick={() => sendTag('MySQL')} className="skill-icons" style={{ color: '#4479A1' }} />
           </Popover>
 
           <Popover content="GNU/Linux">
-            <SiLinux className="skill-icons" style={{ color: '#FCC624' }} />
+            <SiLinux onClick={() => sendTag('GNU/Linux')} className="skill-icons" style={{ color: '#FCC624' }} />
           </Popover>
 
           <Popover content="ESLint">
-            <SiEslint className="skill-icons" style={{ color: '#4B32C3' }} />
+            <SiEslint onClick={() => sendTag('ESLint')} className="skill-icons" style={{ color: '#4B32C3' }} />
           </Popover>
 
           <Popover content="Vim">
-            <SiVim className="skill-icons" style={{ color: '#019733' }} />
+            <SiVim onClick={() => sendTag('Vim')} className="skill-icons" style={{ color: '#019733' }} />
           </Popover>
 
           <Popover content="Visual Studio Code">
-            <SiVisualstudiocode className="skill-icons" style={{ color: '#007ACC' }} />
+            <SiVisualstudiocode onClick={() => sendTag('Visual Studio Code')} className="skill-icons" style={{ color: '#007ACC' }} />
           </Popover>
 
           <Popover content="JSON">
-            <SiJson className="skill-icons" style={{ color: '#000' }} />
+            <SiJson onClick={() => sendTag('JSON')} className="skill-icons" style={{ color: '#000' }} />
           </Popover>
 
           <Popover content="LaTeX">
-            <SiLatex className="skill-icons" style={{ color: '#008080' }} />
+            <SiLatex onClick={() => sendTag('LaTeX')} className="skill-icons" style={{ color: '#008080' }} />
           </Popover>
 
           <Popover content="Unity">
-            <SiUnity className="skill-icons" style={{ color: '#000' }} />
+            <SiUnity onClick={() => sendTag('Unity')} className="skill-icons" style={{ color: '#000' }} />
           </Popover>
         </TabPane>
 
         <TabPane tab="Technical Knowledge" key="technical">
           <Popover content="Frontend development">
-            <GrMonitor className="skill-icons" />
+            <GrMonitor onClick={() => sendTag('Frontend development')} className="skill-icons" />
           </Popover>
 
           <Popover content="Backend development">
-            <GiServerRack className="skill-icons" />
+            <GiServerRack onClick={() => sendTag('Backend development')} className="skill-icons" />
           </Popover>
 
           <Popover content="API Development (OpenAPI)">
-            <SiOpenapiinitiative className="skill-icons" />
+            <SiOpenapiinitiative onClick={() => sendTag('API Development (OpenAPI)')} className="skill-icons" />
           </Popover>
 
           <Popover content="Database management">
-            <GiDatabase className="skill-icons" />
+            <GiDatabase onClick={() => sendTag('Database management')} className="skill-icons" />
           </Popover>
 
           <Popover content="Documentation">
-            <GiBookshelf className="skill-icons" />
+            <GiBookshelf onClick={() => sendTag('Documentation')} className="skill-icons" />
           </Popover>
 
           <Popover content="Software development life-cycles">
-            <GrCycle className="skill-icons" />
+            <GrCycle onClick={() => sendTag('Software development life-cycles')} className="skill-icons" />
           </Popover>
 
           <Popover content="Object-oriented programming">
-            <GiBrickPile className="skill-icons" />
+            <GiBrickPile onClick={() => sendTag('Object-oriented programming')} className="skill-icons" />
           </Popover>
         </TabPane>
       </Tabs>
