@@ -24999,8 +24999,9 @@ body {
   font-size: 64px;
   margin: 16px;
 }
-.imglink {
+.img-link {
   text-align: center;
+  display: float;
 }
 .projects {
   margin: 10px;
@@ -25043,5 +25044,5 @@ body {
   opacity: 1;
 }
 .search-bar {
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
