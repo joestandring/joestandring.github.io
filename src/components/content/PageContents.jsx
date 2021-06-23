@@ -11,8 +11,10 @@ function PageContents() {
 
   return (
     <>
-      <About parentCallback={callbackFunction} />
-      <Portfolio selectedTag={tag} />
+      <div>
+        <About parentCallback={callbackFunction} />
+        <Portfolio selectedTag={tag} />
+      </div>
     </>
   );
 }

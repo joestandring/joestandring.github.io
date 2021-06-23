@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable array-callback-return */
 /* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
@@ -10,6 +12,7 @@ import {
   Button,
 } from 'antd';
 import Data from '../../data/portfolio.json';
+import ProjectModal from './ProjectModal';
 
 const { Title, Text } = Typography;
 
@@ -20,6 +23,8 @@ function Portfolio(props) {
   useEffect(() => {
     setSelectedTag(props.selectedTag);
   }, [props.selectedTag]);
+
+  const openModal = () => <ProjectModal />;
 
   const handleChange = (event) => {
     const query = event.target.value;
@@ -41,7 +46,7 @@ function Portfolio(props) {
       return data;
     }
   }).map((data) => (
-    <div className="img-link">
+    <div className="img-link" onClick={openModal}>
       <div className="projects">
         <img src={data.thumb} alt={data.name} />
         <div className="overlay">
