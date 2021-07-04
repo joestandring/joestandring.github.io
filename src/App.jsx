@@ -1,5 +1,6 @@
 import React from 'react';
 import { Layout } from 'antd';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Nav from './components/Nav';
 import Cover from './components/Cover';
@@ -9,17 +10,23 @@ const { Header, Content } = Layout;
 
 function App() {
   return (
-    <Layout className="layout">
-      <Cover />
+    <Router>
+      <Layout className="layout">
+        <Cover />
 
-      <Content className="content-style">
-        <PageContents />
-      </Content>
+        <Content className="content-style">
+          <Switch>
+            <Route path="/">
+              <PageContents />
+            </Route>
+          </Switch>
+        </Content>
 
-      <Header className="header-style">
-        <Nav />
-      </Header>
-    </Layout>
+        <Header className="header-style">
+          <Nav />
+        </Header>
+      </Layout>
+    </Router>
   );
 }
 

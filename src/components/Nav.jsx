@@ -6,19 +6,34 @@ import {
   Typography,
 } from 'antd';
 import { GithubFilled, LinkedinFilled, TwitterCircleFilled } from '@ant-design/icons';
+import { HashLink } from 'react-router-hash-link';
 
 const { Title } = Typography;
 
 function Nav() {
+  const scrollWithOffsetAbout = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -65;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  };
+
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -85;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  };
+
   return (
     <Row>
       <Col span={8}>
-        <Title
-          level={2}
-          style={{ color: '#f2f2f2f2', marginTop: '10.5px', marginLeft: '25px' }}
-        >
-          Joe Standring
-        </Title>
+        <HashLink smooth to="/#top">
+          <Title
+            level={2}
+            style={{ color: '#f2f2f2f2', marginTop: '10.5px', marginLeft: '25px' }}
+          >
+            Joe Standring
+          </Title>
+        </HashLink>
       </Col>
 
       <Col flex={1}>
@@ -27,24 +42,23 @@ function Nav() {
           mode="horizontal"
           className="nav-menu"
         >
-          <Menu.Item
-            className="nav-item"
-            key="about"
-          >
-            About
-          </Menu.Item>
-          <Menu.Item
-            className="nav-item"
-            key="portfolio"
-          >
-            Portfolio
-          </Menu.Item>
-          <Menu.Item
-            className="nav-item"
-            key="blog"
-          >
-            Blog
-          </Menu.Item>
+          <HashLink smooth to="/#about" scroll={(el) => scrollWithOffsetAbout(el)}>
+            <div className="nav-item">
+              About
+            </div>
+          </HashLink>
+
+          <HashLink smooth to="/#portfolio" scroll={(el) => scrollWithOffset(el)}>
+            <div className="nav-item">
+              Portfolio
+            </div>
+          </HashLink>
+
+          <HashLink smooth to="/#blog" scroll={(el) => scrollWithOffset(el)}>
+            <div className="nav-item">
+              Blog
+            </div>
+          </HashLink>
         </Menu>
       </Col>
 

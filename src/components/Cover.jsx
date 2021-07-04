@@ -1,10 +1,17 @@
 import React from 'react';
 import { Typography, Button } from 'antd';
 import { ArrowDownOutlined } from '@ant-design/icons';
+import { HashLink } from 'react-router-hash-link';
 
 const { Title } = Typography;
 
 function Cover() {
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -50;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  };
+
   return (
     <div className="cover">
       <Title style={{ color: '#f2f2f2', textAlign: 'center' }}>
@@ -19,7 +26,9 @@ function Cover() {
           web developer.
         </div>
       </Title>
-      <Button type="primary" size="large" icon={<ArrowDownOutlined />}>See my work</Button>
+      <HashLink smooth to="/#about" scroll={(el) => scrollWithOffset(el)}>
+        <Button type="primary" size="large" icon={<ArrowDownOutlined />}>See my work</Button>
+      </HashLink>
     </div>
   );
 }

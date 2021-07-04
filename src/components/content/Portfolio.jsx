@@ -12,7 +12,6 @@ import {
   Button,
 } from 'antd';
 import Data from '../../data/portfolio.json';
-import ProjectModal from './ProjectModal';
 
 const { Title, Text } = Typography;
 
@@ -23,8 +22,6 @@ function Portfolio(props) {
   useEffect(() => {
     setSelectedTag(props.selectedTag);
   }, [props.selectedTag]);
-
-  const openModal = () => <ProjectModal />;
 
   const handleChange = (event) => {
     const query = event.target.value;
@@ -46,7 +43,7 @@ function Portfolio(props) {
       return data;
     }
   }).map((data) => (
-    <div className="img-link" onClick={openModal}>
+    <div className="img-link">
       <div className="projects">
         <img src={data.thumb} alt={data.name} />
         <div className="overlay">
@@ -87,7 +84,7 @@ function Portfolio(props) {
     );
   }
   return (
-    <>
+    <div id="portfolio">
       <Title className="page-title">Portfolio</Title>
       <Input
         className="search-bar"
@@ -99,7 +96,7 @@ function Portfolio(props) {
       <Row className="vert-center">
         {projects}
       </Row>
-    </>
+    </div>
   );
 }
 

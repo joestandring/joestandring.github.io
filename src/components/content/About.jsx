@@ -53,7 +53,7 @@ function About(props) {
   };
 
   return (
-    <>
+    <div id="about">
       <Title className="page-title">About me</Title>
       <Row gutter={64} className="about-row min-width-180">
         <Col flex="220px" className="vert-center">
@@ -63,15 +63,15 @@ function About(props) {
 
         <Col flex={1} className="vert-center">
           <Text>
-            Hi, I&apos;m Joe! I am a recent Informatics graduate and software developer based in
-            Peterborough.
-            I&apos;m a JavaScript and C# developer intereseted in full-stack web development,
-            Linux, and open source software. I have skills in web and
+            Hi, I&apos;m Joe! I am a full-stack software developer at
+            <a target="_blank" href="https://www.generalandmedical.com/" rel="noreferrer"> General and Medical </a>
+            based in Peterborough.
+            I&apos;m a JavaScript and C# developer intereseted in all things web, open-source, and
+            Linux. I have skills in web and
             native app development and have worked on projects using JavaScript, React, C#, shell
             scripting, and Unity. I have a passion for making beautiful, functional, and clean
-            designs.
-            I am currently looking for work in a software development role. You can get in touch
-            with me by
+            designs supported by reliable architechture.
+            You can get in touch with me by
             <a href="mailto:joe@joestandring.com"> email</a>
             , or view my
             <a target="_blank" href="https://linkedin.com/in/joestandring" rel="noreferrer"> LinkedIn </a>
@@ -193,7 +193,7 @@ function About(props) {
       </Tabs>
 
       <Divider />
-    </>
+    </div>
   );
 }
 
