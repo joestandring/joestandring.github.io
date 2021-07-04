@@ -53,7 +53,7 @@ function About(props) {
   };
 
   return (
-    <div id="about">
+    <>
       <Title className="page-title">About me</Title>
       <Row gutter={64} className="about-row min-width-180">
         <Col flex="220px" className="vert-center">
@@ -193,7 +193,7 @@ function About(props) {
       </Tabs>
 
       <Divider />
-    </div>
+    </>
   );
 }
 
