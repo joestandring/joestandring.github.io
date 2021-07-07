@@ -5,6 +5,7 @@ import './App.css';
 import Nav from './components/Nav';
 import Cover from './components/Cover';
 import PageContents from './components/content/PageContents';
+import Project from './components/content/Project';
 
 const { Header, Content } = Layout;
 
@@ -12,15 +13,20 @@ function App() {
   return (
     <Router>
       <Layout className="layout">
-        <Cover />
 
-        <Content className="content-style">
-          <Switch>
-            <Route path="/">
+        <Switch>
+          <Route path="/:route">
+            <Content className="content-style">
+              <Project />
+            </Content>
+          </Route>
+          <Route path="/">
+            <Cover />
+            <Content className="content-style">
               <PageContents />
-            </Route>
-          </Switch>
-        </Content>
+            </Content>
+          </Route>
+        </Switch>
 
         <Header className="header-style">
           <Nav />

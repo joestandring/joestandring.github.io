@@ -11,12 +11,6 @@ import { HashLink } from 'react-router-hash-link';
 const { Title } = Typography;
 
 function Nav() {
-  const scrollWithOffsetAbout = (el) => {
-    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -65;
-    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
-  };
-
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -85;
@@ -42,7 +36,7 @@ function Nav() {
           mode="horizontal"
           className="nav-menu"
         >
-          <HashLink smooth to="/#about" scroll={(el) => scrollWithOffsetAbout(el)}>
+          <HashLink smooth to="/#about" scroll={(el) => scrollWithOffset(el)}>
             <div className="nav-item">
               About
             </div>

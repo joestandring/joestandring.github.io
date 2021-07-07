@@ -8,7 +8,7 @@ const { Title } = Typography;
 function Cover() {
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
-    const yOffset = -50;
+    const yOffset = -85;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
   };
 

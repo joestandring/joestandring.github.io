@@ -5,6 +5,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable consistent-return */
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Typography,
   Input,
@@ -43,16 +44,18 @@ function Portfolio(props) {
       return data;
     }
   }).map((data) => (
-    <div className="img-link">
-      <div className="projects">
-        <img src={data.thumb} alt={data.name} />
-        <div className="overlay">
-          <div className="overlay-text">
-            <h3 style={{ color: 'white' }}>{data.name}</h3>
+    <Link to={`/${data.route}`}>
+      <div className="img-link">
+        <div className="projects">
+          <img src={data.thumb} alt={data.name} />
+          <div className="overlay">
+            <div className="overlay-text">
+              <h3 style={{ color: 'white' }}>{data.name}</h3>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   ));
 
   function ClearTag() {

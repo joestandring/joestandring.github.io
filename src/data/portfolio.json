@@ -1,6 +1,7 @@
 [
   {
     "name": "This Website",
+    "route": "this-website",
     "thumb": "portfolio/website.png",
     "org": "Independent",
     "start": "June 2021",
@@ -24,6 +25,7 @@
   },
   {
     "name": "dwm-bar",
+    "route": "dwm-bar",
     "thumb": "portfolio/dwm-bar.png",
     "org": "Independent",
     "start": "May 2019",
@@ -40,6 +42,7 @@
   },
   {
     "name": "3D Pathfinding",
+    "route": "3d-pathfinding",
     "thumb": "portfolio/pathfinding.png",
     "org": "Coventry University",
     "start": "Januray 2021",
@@ -57,6 +60,7 @@
   },
   {
     "name": "Public Library",
+    "route": "public-library",
     "thumb": "portfolio/public-library.png",
     "org": "Coventry University",
     "start": "October 2020",
@@ -84,6 +88,7 @@
   },
   {
     "name": "nmenu",
+    "route": "nmenu",
     "thumb": "portfolio/nmenu.png",
     "org": "Independent",
     "start": "October 2019",
@@ -100,6 +105,7 @@
   },
   {
     "name": "Android Privacy Guide",
+    "route": "android-privacy-guide",
     "thumb": "portfolio/android.png",
     "org": "Independent",
     "start": "June 2020",
@@ -116,6 +122,7 @@
   },
   {
     "name": "Theatre Booking System",
+    "route": "theatre-booking-system",
     "thumb": "portfolio/theatre.png",
     "org": "Coventry University",
     "start": "September 2020",
@@ -143,6 +150,7 @@
   },
   {
     "name": "void-installer",
+    "route": "void-installer",
     "thumb": "portfolio/void.png",
     "org": "Independent",
     "start": "November 2019",
@@ -159,6 +167,7 @@
   },
   {
     "name": "dotfiles",
+    "route": "dotfiles",
     "thumb": "portfolio/dotfiles.png",
     "org": "Independent",
     "start": "February 2020",
@@ -177,6 +186,7 @@
   },
   {
     "name": "countdown",
+    "route": "countdown",
     "thumb": "portfolio/countdown.png",
     "org": "Independent",
     "start": "April 2019",
@@ -193,6 +203,7 @@
   },
   {
     "name": "alarm",
+    "route": "alarm",
     "thumb": "portfolio/alarm.png",
     "org": "Independent",
     "start": "January 2020",
