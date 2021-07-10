@@ -41,7 +41,6 @@ import {
   GrMonitor,
   GrCycle,
 } from 'react-icons/gr';
-
 import me from '../../media/me.jpg';
 
 const { Title, Text } = Typography;

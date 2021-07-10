@@ -1,0 +1,149 @@
+[
+  {
+    "name": "JavaScript",
+    "category": "languages",
+    "icon": "SiJAvascript",
+    "color": "#F7DF1E"
+  },
+  {
+    "name": "TypeScript",
+    "category": "languages",
+    "icon": "SiTypescript",
+    "color": "#3178C6"
+  },
+  {
+    "name": "C#",
+    "category": "languages",
+    "icon": "SiCsharp",
+    "color": "#239120"
+  },
+  {
+    "name": "C/C++",
+    "category": "languages",
+    "icon": "SiCplusplus",
+    "color": "#00599C"
+  },
+  {
+    "name": "BASH/Shell",
+    "category": "languages",
+    "icon": "SiGnubash",
+    "color": "#4EAA25"
+  },
+  {
+    "name": "HTML5",
+    "category": "languages",
+    "icon": "SiHtml5",
+    "color": "#E34F26"
+  },
+  {
+    "name": "CSS3",
+    "category": "languages",
+    "icon": "SiCss3",
+    "color": "#1572B6"
+  },
+  {
+    "name": "React",
+    "category": "software",
+    "icon": "SiReact",
+    "color": "#61DAFB"
+  },
+  {
+    "name": "Node.js",
+    "category": "software",
+    "icon": "SiNodeDotJs",
+    "color": "#339933"
+  },
+  {
+    "name": "npm",
+    "category": "software",
+    "icon": "SiNpm",
+    "color": "#CB3837"
+  },
+  {
+    "name": "Git",
+    "category": "software",
+    "icon": "SiGit",
+    "color": "#F05032"
+  },
+  {
+    "name": "MySQL",
+    "category": "software",
+    "icon": "SiMysql",
+    "color": "#4479A1"
+  },
+  {
+    "name": "GNU/Linux",
+    "category": "software",
+    "icon": "SiLinux",
+    "color": "#FCC624"
+  },
+  {
+    "name": "ESLint",
+    "category": "software",
+    "icon": "SiEslint",
+    "color": "#4B323C"
+  },
+  {
+    "name": "Vim",
+    "category": "software",
+    "icon": "SiVim",
+    "color": "#019733"
+  },
+  {
+    "name": "Visual Studio Code",
+    "category": "software",
+    "icon": "SiVisualstudiocode",
+    "color": "#007ACC"
+  },
+  {
+    "name": "JSON",
+    "category": "software",
+    "icon": "SiJson"
+  },
+  {
+    "name": "LaTeX",
+    "category": "software",
+    "icon": "SiLatex",
+    "color": "#008080"
+  },
+  {
+    "name": "Unity",
+    "category": "software",
+    "icon": "SiUnity"
+  },
+  {
+    "name": "Frontend development",
+    "category": "technical",
+    "icon": "GrMonitor"
+  },
+  {
+    "name": "Backend development",
+    "category": "technical",
+    "icon": "GiServerRack"
+  },
+  {
+    "name": "API Development (OpenAPI)",
+    "category": "technical",
+    "icon": "SiOpenapiinitiative"
+  },
+  {
+    "name": "Database Management",
+    "category": "technical",
+    "icon": "GiDatabase"
+  },
+  {
+    "name": "Documentation",
+    "category": "technical",
+    "icon": "GiBookshelf"
+  },
+  {
+    "name": "Software development life-cycles",
+    "category": "technical",
+    "icon": "GrCycle"
+  },
+  {
+    "name": "Object-oriented programming",
+    "category": "technical",
+    "icon": "GiBrickPile"
+  }
+]

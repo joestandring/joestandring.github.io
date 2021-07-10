@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Typography, Spin } from 'antd';
+import { useParams, Link } from 'react-router-dom';
+import {
+  Typography,
+  Spin,
+  Tag,
+  Divider,
+} from 'antd';
 import Data from '../../data/portfolio.json';
+import Tags from '../../data/tags.json';
 
-const { Title } = Typography;
+const { Title, Text } = Typography;
 
 function Project() {
   const [project, setProject] = useState();
@@ -18,9 +24,52 @@ function Project() {
   }, route);
 
   if (project != null) {
+    const tags = [];
+
+    project.tags.forEach((tagName) => {
+      tags.push(Tags.find((tag) => tag.name === tagName));
+    });
+
+    const projectTags = tags.map((tag) => (
+      <Tag color={tag.color}>{tag.name}</Tag>
+    ));
+
     return (
       <>
-        <Title>{project.name}</Title>
+        <div className="vert-center">
+          <img
+            className="project-image"
+            src={project.thumb}
+            alt={project.name}
+            width="60%"
+          />
+        </div>
+        <Title className="page-title">{project.name}</Title>
+        <div style={{ textAlign: 'center' }}>
+          <Text>
+            {project.start}
+            {' '}
+            -
+            {' '}
+            {project.end}
+          </Text>
+        </div>
+        <div style={{ textAlign: 'center' }}>
+          <Text>{project.org}</Text>
+        </div>
+        <div style={{ textAlign: 'center' }}>
+          <Link to={project.link}>
+            Link
+          </Link>
+        </div>
+        <Divider />
+        <div style={{ textAlign: 'center' }}>
+          {projectTags}
+        </div>
+        <Divider />
+        <div style={{ textAlign: 'center' }}>
+          <Text>{project.desc}</Text>
+        </div>
       </>
     );
   // eslint-disable-next-line no-else-return
