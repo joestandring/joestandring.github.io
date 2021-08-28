@@ -17,12 +17,13 @@
       "ASP.NET",
       "npm",
       "Git",
+      "Azure DevOps",
       "SQL",
       "Visual Studio Code",
       "Frontend development",
       "Backend development",
       "API Development (OpenAPI)",
-      "Database Managemnet",
+      "Database management",
       "Documentation",
       "Software development life-cycles",
       "Object-oriented programming"
@@ -108,7 +109,7 @@
       "JSON",
       "Frontend development",
       "Backend development",
-      "API Development",
+      "API Development (OpenAPI)",
       "Database management",
       "Documentation",
       "Software development life-cycles"
@@ -124,7 +125,7 @@
     "desc": "A TUI dialogue box system made in ncurses and POSIX-compliant shell script.",
     "link": "https://github.com/joestandring/nmenu",
     "tags": [
-      "C++",
+      "C/C++",
       "Git",
       "GNU/Linux",
       "Documentation"
@@ -169,7 +170,7 @@
       "JSON",
       "Frontend development",
       "Backend development",
-      "Database Management",
+      "Database management",
       "Documentation",
       "Software development life-cycles"
     ]
@@ -200,7 +201,7 @@
     "desc": "Configurations for my Arch Linux install.",
     "link": "https://github.com/joestandring/dotfiles",
     "tags": [
-      "C++",
+      "C/C++",
       "BASH/Shell",
       "Git",
       "GNU/Linux",
