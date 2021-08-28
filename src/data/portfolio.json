@@ -1,5 +1,34 @@
 [
   {
+    "name": "Projects at General & Medical",
+    "route": "genmed",
+    "thumb": "portfolio/genmed.png",
+    "org": "General & Medical",
+    "start": "July 2021",
+    "end": "Present",
+    "desc": "I am currently employed as a full-stack developer at General & Medical, where I work on a variety of projects with diverse tech stacks in a small team of developers. These include an ERP system used by staff built on ASP.NET and an SQL Server database, another ERP system using .NET and React, the public website built on ASP.NET, and a customer mobile application.",
+    "link": "https://www.generalandmedical.com/",
+    "tags": [
+      "JavaScript",
+      "C#",
+      "HTML5",
+      "CSS3",
+      "React",
+      "ASP.NET",
+      "npm",
+      "Git",
+      "SQL",
+      "Visual Studio Code",
+      "Frontend development",
+      "Backend development",
+      "API Development (OpenAPI)",
+      "Database Managemnet",
+      "Documentation",
+      "Software development life-cycles",
+      "Object-oriented programming"
+    ]
+  },
+  {
     "name": "This Website",
     "route": "this-website",
     "thumb": "portfolio/website.png",
@@ -36,7 +65,6 @@
       "BASH/Shell",
       "Git",
       "GNU/Linux",
-      "Vim",
       "Documentation"
     ]
   },
@@ -75,7 +103,7 @@
       "Node.js",
       "npm",
       "Git",
-      "MySQL",
+      "SQL",
       "ESLint",
       "JSON",
       "Frontend development",
@@ -99,7 +127,6 @@
       "C++",
       "Git",
       "GNU/Linux",
-      "Vim",
       "Documentation"
     ]
   },
@@ -116,7 +143,6 @@
       "HTML5",
       "CSS3",
       "Git",
-      "Vim",
       "Frontend development"
     ]
   },
@@ -137,7 +163,7 @@
       "Node.js",
       "npm",
       "Git",
-      "MySQL",
+      "SQL",
       "GNU/Linux",
       "ESLint",
       "JSON",
@@ -161,7 +187,6 @@
       "BASH/Shell",
       "Git",
       "GNU/Linux",
-      "Vim",
       "Documentation"
     ]
   },
@@ -179,8 +204,6 @@
       "BASH/Shell",
       "Git",
       "GNU/Linux",
-      "Vim",
-      "LaTeX",
       "Documentation"
     ]
   },
@@ -197,7 +220,6 @@
       "BASH/Shell",
       "Git",
       "GNU/Linux",
-      "Vim",
       "Documentation"
     ]
   },
@@ -214,7 +236,6 @@
       "BASH/Shell",
       "Git",
       "GNU/Linux",
-      "Vim",
       "Documentation"
     ]
   }

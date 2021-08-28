@@ -11,7 +11,6 @@ import {
 } from 'antd';
 import {
   SiJavascript,
-  SiTypescript,
   SiCsharp,
   SiCplusplus,
   SiGnubash,
@@ -20,16 +19,16 @@ import {
   SiReact,
   SiNodeDotJs,
   SiGit,
-  SiMysql,
+  SiAzuredevops,
+  SiMicrosoftsqlserver,
   SiNpm,
   SiLinux,
   SiEslint,
-  SiVim,
   SiVisualstudiocode,
   SiJson,
   SiUnity,
-  SiLatex,
   SiOpenapiinitiative,
+  SiDotNet,
 } from 'react-icons/si';
 import {
   GiServerRack,
@@ -63,7 +62,7 @@ function About(props) {
         <Col flex={1} className="vert-center">
           <Text>
             Hi, I&apos;m Joe! I am a full-stack software developer at
-            <a target="_blank" href="https://www.generalandmedical.com/" rel="noreferrer"> General and Medical </a>
+            <a target="_blank" href="https://www.generalandmedical.com/" rel="noreferrer"> General & Medical </a>
             based in Peterborough.
             I&apos;m a JavaScript and C# developer intereseted in all things web, open-source, and
             Linux. I have skills in web and
@@ -83,10 +82,6 @@ function About(props) {
         <TabPane tab="Programming Languages" key="languages">
           <Popover content="JavaScript">
             <SiJavascript onClick={() => sendTag('JavaScript')} className="skill-icons" style={{ color: '#F7DF1E' }} />
-          </Popover>
-
-          <Popover content="TypeScript">
-            <SiTypescript onClick={() => sendTag('TypeScript')} className="skill-icons" style={{ color: '#3178C6' }} />
           </Popover>
 
           <Popover content="C#">
@@ -123,12 +118,20 @@ function About(props) {
             <SiNpm onClick={() => sendTag('npm')} className="skill-icons" style={{ color: '#CB3837' }} />
           </Popover>
 
+          <Popover content="ASP.NET">
+            <SiDotNet onClick={() => sendTag('ASP.NET')} className="skill-icons" style={{ color: '#5c2d91' }} />
+          </Popover>
+
           <Popover content="Git">
             <SiGit onClick={() => sendTag('Git')} className="skill-icons" style={{ color: '#F05032' }} />
           </Popover>
 
-          <Popover content="MySQL">
-            <SiMysql onClick={() => sendTag('MySQL')} className="skill-icons" style={{ color: '#4479A1' }} />
+          <Popover content="Azure DevOps">
+            <SiAzuredevops onClick={() => sendTag('Azure DevOps')} className="skill-icons" style={{ color: '#0078d4' }} />
+          </Popover>
+
+          <Popover content="SQL">
+            <SiMicrosoftsqlserver onClick={() => sendTag('SQL')} className="skill-icons" style={{ color: '#c02525' }} />
           </Popover>
 
           <Popover content="GNU/Linux">
@@ -139,20 +142,12 @@ function About(props) {
             <SiEslint onClick={() => sendTag('ESLint')} className="skill-icons" style={{ color: '#4B32C3' }} />
           </Popover>
 
-          <Popover content="Vim">
-            <SiVim onClick={() => sendTag('Vim')} className="skill-icons" style={{ color: '#019733' }} />
-          </Popover>
-
           <Popover content="Visual Studio Code">
             <SiVisualstudiocode onClick={() => sendTag('Visual Studio Code')} className="skill-icons" style={{ color: '#007ACC' }} />
           </Popover>
 
           <Popover content="JSON">
             <SiJson onClick={() => sendTag('JSON')} className="skill-icons" style={{ color: '#000' }} />
-          </Popover>
-
-          <Popover content="LaTeX">
-            <SiLatex onClick={() => sendTag('LaTeX')} className="skill-icons" style={{ color: '#008080' }} />
           </Popover>
 
           <Popover content="Unity">

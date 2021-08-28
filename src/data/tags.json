@@ -6,12 +6,6 @@
     "color": "#F7DF1E"
   },
   {
-    "name": "TypeScript",
-    "category": "languages",
-    "icon": "SiTypescript",
-    "color": "#3178C6"
-  },
-  {
     "name": "C#",
     "category": "languages",
     "icon": "SiCsharp",
@@ -48,6 +42,12 @@
     "color": "#61DAFB"
   },
   {
+    "name": "ASP.NET",
+    "category": "software",
+    "icon": "SiDotNet",
+    "color": "#5c2d91"
+  },
+  {
     "name": "Node.js",
     "category": "software",
     "icon": "SiNodeDotJs",
@@ -66,10 +66,16 @@
     "color": "#F05032"
   },
   {
-    "name": "MySQL",
+    "name": "Azure DevOps",
     "category": "software",
-    "icon": "SiMysql",
-    "color": "#4479A1"
+    "icon": "SiGit",
+    "color": "#0078d4"
+  },
+  {
+    "name": "SQL",
+    "category": "software",
+    "icon": " SiMicrosoftsqlserver",
+    "color": "#c02525"
   },
   {
     "name": "GNU/Linux",
@@ -84,12 +90,6 @@
     "color": "#4B323C"
   },
   {
-    "name": "Vim",
-    "category": "software",
-    "icon": "SiVim",
-    "color": "#019733"
-  },
-  {
     "name": "Visual Studio Code",
     "category": "software",
     "icon": "SiVisualstudiocode",
@@ -99,12 +99,6 @@
     "name": "JSON",
     "category": "software",
     "icon": "SiJson"
-  },
-  {
-    "name": "LaTeX",
-    "category": "software",
-    "icon": "SiLatex",
-    "color": "#008080"
   },
   {
     "name": "Unity",
