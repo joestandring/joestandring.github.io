@@ -24891,6 +24891,9 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   font-size: 12pt;
 }
+.layout {
+  min-height: 100vh;
+}
 .header-style {
   padding: 0;
   position: fixed;
@@ -25013,7 +25016,7 @@ body {
 .skill-icons:hover {
   transform: scale(1.1);
 }
-.img-link {
+.center-text {
   text-align: center;
 }
 .projects {
@@ -25062,4 +25065,8 @@ body {
 .project-image {
   padding-top: 50px;
   padding-bottom: 30px;
+}
+.footer {
+  width: 100%;
+  text-align: center;
 }

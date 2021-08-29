@@ -6,14 +6,14 @@ import Nav from './components/Nav';
 import Cover from './components/Cover';
 import PageContents from './components/content/PageContents';
 import Project from './components/content/Project';
+import FooterContent from './components/FooterContent';
 
-const { Header, Content } = Layout;
+const { Header, Content, Footer } = Layout;
 
 function App() {
   return (
     <Router>
       <Layout className="layout">
-
         <Switch>
           <Route path="/:route">
             <Content className="content-style">
@@ -27,10 +27,12 @@ function App() {
             </Content>
           </Route>
         </Switch>
-
         <Header className="header-style">
           <Nav />
         </Header>
+        <Footer>
+          <FooterContent />
+        </Footer>
       </Layout>
     </Router>
   );
