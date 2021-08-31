@@ -64,7 +64,7 @@ function About(props) {
             Hi, I&apos;m Joe! I am a full-stack software developer at
             <a target="_blank" href="https://www.generalandmedical.com/" rel="noreferrer"> General & Medical </a>
             based in Peterborough.
-            I&apos;m a JavaScript and C# developer intereseted in all things web, open-source, and
+            I&apos;m a JavaScript and C# developer interested in all things web, open-source, and
             Linux. I have skills in web and
             native app development and have worked on projects using JavaScript, React, C#, shell
             scripting, and Unity. I have a passion for making beautiful, functional, and clean
