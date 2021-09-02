@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import About from './About';
 import Portfolio from './Portfolio';
+import Blog from './Blog';
 
 function PageContents() {
   const [tag, setTag] = useState(null);
@@ -13,6 +14,7 @@ function PageContents() {
     <>
       <About parentCallback={callbackFunction} />
       <Portfolio selectedTag={tag} />
+      <Blog />
     </>
   );
 }

@@ -11,6 +11,7 @@ import {
   Input,
   Row,
   Button,
+  Divider,
 } from 'antd';
 import Data from '../../data/portfolio.json';
 
@@ -44,7 +45,7 @@ function Portfolio(props) {
       return data;
     }
   }).map((data) => (
-    <Link to={`/${data.route}`}>
+    <Link to={`/project/${data.route}`}>
       <div className="img-link">
         <div className="projects">
           <img src={data.thumb} alt={data.name} />
@@ -99,6 +100,7 @@ function Portfolio(props) {
       <Row className="vert-center">
         {projects}
       </Row>
+      <Divider />
     </div>
   );
 }

@@ -39,7 +39,7 @@ function Project() {
         <div className="vert-center">
           <img
             className="project-image"
-            src={project.thumb}
+            src={`/${project.thumb}`}
             alt={project.name}
             width="60%"
           />

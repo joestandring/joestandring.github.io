@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Layout className="layout">
         <Switch>
-          <Route path="/:route">
+          <Route path="/project/:route">
             <Content className="content-style">
               <Project />
             </Content>
