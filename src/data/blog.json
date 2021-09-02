@@ -1,6 +1,7 @@
 [
   {
-    "title": "joestandring.com - Now with React",
+    "title": "The New joestandring.com",
+    "subtitle": "Now with React!",
     "route": "welcome",
     "thumb": "blog/welcome.png",
     "date": "2nd September 2021",
@@ -8,12 +9,15 @@
   },
   {
     "title": "(Making) Android Privacy Guide",
+    "subtitle": "Subheading asdasd",
     "route": "androidprivacy",
     "thumb": "blog/androidprivacy.png",
-    "date": "13th September 2020"
+    "date": "13th September 2020",
+    "content": "Test content asd"
   },
   {
     "title": "Pi Zero in an Original Super Famicom Controller",
+    "subtitle": "subheading ashaskldh",
     "route": "pizero",
     "thumb": "blog/pizero.png",
     "date": "26th January 2020",
