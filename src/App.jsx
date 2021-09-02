@@ -7,6 +7,7 @@ import Cover from './components/Cover';
 import PageContents from './components/content/PageContents';
 import Project from './components/content/Project';
 import FooterContent from './components/FooterContent';
+import Post from './components/content/Post';
 
 const { Header, Content, Footer } = Layout;
 
@@ -15,6 +16,11 @@ function App() {
     <Router>
       <Layout className="layout">
         <Switch>
+          <Route path="/blog/:route">
+            <Content className="content-style">
+              <Post />
+            </Content>
+          </Route>
           <Route path="/project/:route">
             <Content className="content-style">
               <Project />

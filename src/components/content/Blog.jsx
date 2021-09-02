@@ -23,10 +23,10 @@ function Blog() {
   });
 
   return (
-    <>
+    <div id="blog">
       <Title className="page-title">Blog</Title>
       {projects}
-    </>
+    </div>
   );
 }
 
