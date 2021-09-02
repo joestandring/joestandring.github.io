@@ -72,12 +72,10 @@ function Project() {
         </div>
       </>
     );
-  // eslint-disable-next-line no-else-return
-  } else {
-    return (
-      <Spin size="large" />
-    );
   }
+  return (
+    <Spin size="large" />
+  );
 }
 
 export default Project;
