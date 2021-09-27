@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {
   Menu,
   Row,
@@ -7,25 +7,13 @@ import {
 } from 'antd';
 import { GithubFilled, LinkedinFilled, TwitterCircleFilled } from '@ant-design/icons';
 import { HashLink } from 'react-router-hash-link';
-import { FaHamburger } from 'react-icons/fa';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const { Title } = Typography;
 
-function getWindowWidth() {
-  const { innerWidth: width } = window;
-  return width;
-}
-
-function Nav() {
-  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
-
-  useEffect(() => {
-    function handleResize() {
-      setWindowWidth(getWindowWidth());
-    }
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+function Nav(props) {
+  // eslint-disable-next-line react/prop-types
+  const { windowWidth } = props;
 
   const scrollWithOffset = (el) => {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
@@ -40,7 +28,7 @@ function Nav() {
           <HashLink smooth to="/#top">
             <Title
               level={2}
-              style={{ color: '#f2f2f2f2', marginTop: '10.5px', marginLeft: '25px' }}
+              className="nav-logo"
             >
               Joe Standring
             </Title>
@@ -88,21 +76,19 @@ function Nav() {
     );
   }
   return (
-    <Row>
-      <Col span={8}>
+    <Row style={{ width: windowWidth }}>
+      <Col flex={1}>
         <HashLink smooth to="/#top">
           <Title
             level={2}
-            style={{ color: '#f2f2f2f2', marginTop: '10.5px', marginLeft: '25px' }}
+            className="nav-logo"
           >
             JS
           </Title>
         </HashLink>
       </Col>
 
-      <Col flex={1}>
-        <FaHamburger size={30} />
-      </Col>
+      <GiHamburgerMenu size={35} className="hamburger" />
     </Row>
   );
 }

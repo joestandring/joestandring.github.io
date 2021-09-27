@@ -46,38 +46,70 @@ const { Title, Text } = Typography;
 const { TabPane } = Tabs;
 
 function About(props) {
+  const { windowWidth } = props;
+
   const sendTag = (tag) => {
     props.parentCallback(tag);
   };
 
+  const Description = () => {
+    const AboutText = () => (
+      <Text>
+        Hi, I&apos;m Joe! I am a full-stack software developer at
+        <a target="_blank" href="https://www.generalandmedical.com/" rel="noreferrer"> General & Medical </a>
+        based in Peterborough.
+        I&apos;m a JavaScript and C# developer interested in all things web, open-source, and
+        Linux. I have skills in web and
+        native app development and have worked on projects using JavaScript, React, C#, shell
+        scripting, and Unity. I have a passion for making beautiful, functional, and clean
+        designs supported by reliable architechture.
+        You can get in touch with me by
+        <a href="mailto:joe@joestandring.com"> email</a>
+        , or view my
+        <a target="_blank" href="https://linkedin.com/in/joestandring" rel="noreferrer"> LinkedIn </a>
+        page for more information.
+      </Text>
+    );
+
+    const Avi = () => (
+      <>
+        <div className="blob" />
+        <img className="about-img" src={me} alt="This is me!" />
+      </>
+    );
+
+    if (windowWidth > 600) {
+      return (
+        <Row gutter={64} className="about-row min-width-180">
+          <Col flex="220px" className="vert-center">
+            <Avi />
+          </Col>
+
+          <Col flex={1} className="vert-center">
+            <AboutText />
+          </Col>
+        </Row>
+      );
+    }
+    return (
+      <>
+        <div className="vert-center avi-mobile">
+          <Avi />
+        </div>
+
+        <div className="center-text">
+          <Text>
+            <AboutText />
+          </Text>
+        </div>
+      </>
+    );
+  };
+
   return (
     <div id="about">
-      <Title className="page-title">About me</Title>
-      <Row gutter={64} className="about-row min-width-180">
-        <Col flex="220px" className="vert-center">
-          <div className="blob" />
-          <img className="about-img" src={me} alt="This is me!" />
-        </Col>
-
-        <Col flex={1} className="vert-center">
-          <Text>
-            Hi, I&apos;m Joe! I am a full-stack software developer at
-            <a target="_blank" href="https://www.generalandmedical.com/" rel="noreferrer"> General & Medical </a>
-            based in Peterborough.
-            I&apos;m a JavaScript and C# developer interested in all things web, open-source, and
-            Linux. I have skills in web and
-            native app development and have worked on projects using JavaScript, React, C#, shell
-            scripting, and Unity. I have a passion for making beautiful, functional, and clean
-            designs supported by reliable architechture.
-            You can get in touch with me by
-            <a href="mailto:joe@joestandring.com"> email</a>
-            , or view my
-            <a target="_blank" href="https://linkedin.com/in/joestandring" rel="noreferrer"> LinkedIn </a>
-            page for more information.
-          </Text>
-        </Col>
-      </Row>
-
+      <Title className="center-text">About me</Title>
+      <Description />
       <Tabs defaultActiveKey="languages" centered className="tab-style">
         <TabPane tab="Programming Languages" key="languages">
           <Popover content="JavaScript">
