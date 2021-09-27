@@ -51,7 +51,7 @@ function Portfolio(props) {
           <img src={data.thumb} alt={data.name} />
           <div className="overlay">
             <div className="overlay-text">
-              <h3 style={{ color: 'white' }}>{data.name}</h3>
+              <h3 className="overlay-text-heading">{data.name}</h3>
             </div>
           </div>
         </div>
@@ -59,14 +59,14 @@ function Portfolio(props) {
     </Link>
   ));
 
-  function ClearTag() {
+  const ClearTag = () => {
     setSelectedTag(null);
-  }
+  };
 
   if (selectedTag != null) {
     return (
       <>
-        <Title className="page-title">Portfolio</Title>
+        <Title className="center-text">Portfolio</Title>
         <Input
           className="search-bar"
           placeholder="Search projects by name or use the icons above"
@@ -89,7 +89,7 @@ function Portfolio(props) {
   }
   return (
     <div id="portfolio">
-      <Title className="page-title">Portfolio</Title>
+      <Title className="center-text">Portfolio</Title>
       <Input
         className="search-bar"
         placeholder="Search projects by name or use the icons above"

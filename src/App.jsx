@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Layout } from 'antd';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
@@ -11,7 +11,22 @@ import Post from './components/content/Post';
 
 const { Header, Content, Footer } = Layout;
 
+const getWindowWidth = () => {
+  const { innerWidth: width } = window;
+  return width;
+};
+
 function App() {
+  const [windowWidth, setWindowWidth] = useState(getWindowWidth());
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(getWindowWidth());
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <Router>
       <Layout className="layout">
@@ -29,12 +44,12 @@ function App() {
           <Route path="/">
             <Cover />
             <Content className="content-style">
-              <PageContents />
+              <PageContents windowWidth={windowWidth} />
             </Content>
           </Route>
         </Switch>
         <Header className="header-style">
-          <Nav />
+          <Nav windowWidth={windowWidth} />
         </Header>
         <Footer>
           <FooterContent />

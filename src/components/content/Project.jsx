@@ -15,9 +15,7 @@ function Project() {
   const [project, setProject] = useState();
   const { route } = useParams();
 
-  function GetProject(projectRoute) {
-    return Data.find((p) => p.route === projectRoute);
-  }
+  const GetProject = (projectRoute) => Data.find((p) => p.route === projectRoute);
 
   useEffect(() => {
     setProject(GetProject(route));
@@ -44,8 +42,8 @@ function Project() {
             width="60%"
           />
         </div>
-        <Title className="page-title">{project.name}</Title>
-        <div style={{ textAlign: 'center' }}>
+        <Title className="center-text">{project.name}</Title>
+        <div className="center-text">
           <Text>
             {project.start}
             {' '}
@@ -54,20 +52,20 @@ function Project() {
             {project.end}
           </Text>
         </div>
-        <div style={{ textAlign: 'center' }}>
+        <div className="center-text">
           <Text>{project.org}</Text>
         </div>
-        <div style={{ textAlign: 'center' }}>
+        <div className="center-text">
           <a href={project.link}>
             Link
           </a>
         </div>
         <Divider />
-        <div style={{ textAlign: 'center' }}>
+        <div className="center-text">
           {projectTags}
         </div>
         <Divider />
-        <div style={{ textAlign: 'center' }}>
+        <div className="center-text">
           <Text>{project.desc}</Text>
         </div>
       </>

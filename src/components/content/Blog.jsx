@@ -24,7 +24,7 @@ function Blog() {
 
   return (
     <div id="blog">
-      <Title className="page-title">Blog</Title>
+      <Title className="center-text">Blog</Title>
       {projects}
     </div>
   );

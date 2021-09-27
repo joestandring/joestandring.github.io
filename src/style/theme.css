@@ -24952,7 +24952,6 @@ body {
 }
 .vert-center {
   justify-content: center;
-  align-items: center;
   display: flex;
 }
 :root {
@@ -25059,6 +25058,9 @@ body {
   text-align: center;
   opacity: 1;
 }
+.overlay-text-heading {
+  color: #f2f2f2;
+}
 .search-bar {
   margin-bottom: 15px;
 }
@@ -25069,4 +25071,24 @@ body {
 .footer {
   width: 100%;
   text-align: center;
+}
+.cover-title {
+  color: #f2f2f2 !important;
+  text-align: center;
+}
+.nav-logo {
+  color: #f2f2f2 !important;
+  margin-top: 10.5px !important;
+  margin-left: 18px !important;
+}
+.top-padding {
+  padding-top: 50px;
+}
+.hamburger {
+  color: #f2f2f2;
+  margin-right: 35px;
+  margin-top: 14px;
+}
+.avi-mobile {
+  margin-bottom: 200px;
 }

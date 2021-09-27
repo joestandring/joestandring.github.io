@@ -14,7 +14,7 @@ function Cover() {
 
   return (
     <div className="cover">
-      <Title style={{ color: '#f2f2f2', textAlign: 'center' }}>
+      <Title className="cover-title">
         <div>
           Hi! I&apos;m
           <span className="green"> Joe</span>

@@ -9,9 +9,7 @@ function Post() {
   const [post, setPost] = useState();
   const { route } = useParams();
 
-  function GetPost(postRoute) {
-    return Data.find((p) => p.route === postRoute);
-  }
+  const GetPost = (postRoute) => Data.find((p) => p.route === postRoute);
 
   useEffect(() => {
     setPost(GetPost(route));
@@ -21,8 +19,8 @@ function Post() {
   if (post != null) {
     return (
       <>
-        <Title className="page-title" style={{ paddingTop: '50px' }}>{post.title}</Title>
-        <Title className="page-title" level={3} type="secondary"><i>{post.subtitle}</i></Title>
+        <Title className="center-text top-padding">{post.title}</Title>
+        <Title className="center-text" level={3} type="secondary"><i>{post.subtitle}</i></Title>
         <div className="vert-center">
           <img
             src={`/${post.thumb}`}
