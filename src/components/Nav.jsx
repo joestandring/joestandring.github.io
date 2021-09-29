@@ -103,23 +103,23 @@ function Nav(props) {
       <GiHamburgerMenu size={35} className="hamburger" onClick={toggleDrawer} cursor="pointer" />
       <Drawer
         bodyStyle={{ backgroundColor: '#222', padding: '0' }}
-        headerStyle={{ color: '#f2f2f2', height: '64px' }}
+        headerStyle={{ color: '#f2f2f2', height: '64px', padding: '0' }}
         visible={drawerVisible}
         onClose={toggleDrawer}
         closeIcon={<CloseCircleFilled className="close-icon" />}
         title="Go to..."
       >
-        <HashLink smooth to="/#about" scroll={(el) => scrollWithOffset(el)}>
+        <HashLink smooth to="/#about" scroll={(el) => scrollWithOffset(el)} onClick={toggleDrawer}>
           <div className="mobile-nav-item">
             About me
           </div>
         </HashLink>
-        <HashLink smooth to="/#portfolio" scroll={(el) => scrollWithOffset(el)}>
+        <HashLink smooth to="/#portfolio" scroll={(el) => scrollWithOffset(el)} onClick={toggleDrawer}>
           <div className="mobile-nav-item">
             Portfolio
           </div>
         </HashLink>
-        <HashLink smooth to="/#blog" scroll={(el) => scrollWithOffset(el)}>
+        <HashLink smooth to="/#blog" scroll={(el) => scrollWithOffset(el)} onClick={toggleDrawer}>
           <div className="mobile-nav-item">
             Blog
           </div>

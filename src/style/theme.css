@@ -25118,3 +25118,12 @@ body {
   color: #222222;
   font-size: 18px;
 }
+.ant-drawer-title {
+  text-align: center;
+  height: 64px;
+  line-height: 64px;
+}
+.ant-drawer-close {
+  height: 64px;
+  width: 64px;
+}
