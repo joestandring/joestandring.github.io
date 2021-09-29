@@ -24944,8 +24944,9 @@ body {
 .social-margin {
   margin-right: 25px;
 }
-.page-title {
+.page-subtitle {
   text-align: center;
+  padding-top: 15px;
 }
 .new-line {
   padding-bottom: 12px;
@@ -24955,7 +24956,7 @@ body {
   display: flex;
 }
 :root {
-  --background: #000;
+  --background: black;
   --secondary: #3D9970;
   --third: #295b45;
 }
@@ -25091,4 +25092,7 @@ body {
 }
 .avi-mobile {
   margin-bottom: 200px;
+}
+.skill-container {
+  background-color: #e0e0e0;
 }
