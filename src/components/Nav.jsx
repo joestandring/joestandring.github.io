@@ -1,17 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   Menu,
   Row,
   Col,
   Typography,
+  Drawer,
 } from 'antd';
-import { GithubFilled, LinkedinFilled, TwitterCircleFilled } from '@ant-design/icons';
+import {
+  GithubFilled,
+  LinkedinFilled,
+  TwitterCircleFilled,
+  CloseCircleFilled,
+} from '@ant-design/icons';
 import { HashLink } from 'react-router-hash-link';
 import { GiHamburgerMenu } from 'react-icons/gi';
 
 const { Title } = Typography;
 
 function Nav(props) {
+  const [drawerVisible, setDrawerVisible] = useState(false);
+
   // eslint-disable-next-line react/prop-types
   const { windowWidth } = props;
 
@@ -19,6 +27,10 @@ function Nav(props) {
     const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
     const yOffset = -85;
     window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  };
+
+  const toggleDrawer = () => {
+    setDrawerVisible(!drawerVisible);
   };
 
   if (windowWidth > 600) {
@@ -88,7 +100,31 @@ function Nav(props) {
         </HashLink>
       </Col>
 
-      <GiHamburgerMenu size={35} className="hamburger" />
+      <GiHamburgerMenu size={35} className="hamburger" onClick={toggleDrawer} cursor="pointer" />
+      <Drawer
+        bodyStyle={{ backgroundColor: '#222', padding: '0' }}
+        headerStyle={{ color: '#f2f2f2', height: '64px' }}
+        visible={drawerVisible}
+        onClose={toggleDrawer}
+        closeIcon={<CloseCircleFilled className="close-icon" />}
+        title="Go to..."
+      >
+        <HashLink smooth to="/#about" scroll={(el) => scrollWithOffset(el)}>
+          <div className="mobile-nav-item">
+            About me
+          </div>
+        </HashLink>
+        <HashLink smooth to="/#portfolio" scroll={(el) => scrollWithOffset(el)}>
+          <div className="mobile-nav-item">
+            Portfolio
+          </div>
+        </HashLink>
+        <HashLink smooth to="/#blog" scroll={(el) => scrollWithOffset(el)}>
+          <div className="mobile-nav-item">
+            Blog
+          </div>
+        </HashLink>
+      </Drawer>
     </Row>
   );
 }
