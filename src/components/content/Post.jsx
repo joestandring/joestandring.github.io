@@ -28,9 +28,6 @@ function Post() {
             width="60%"
           />
         </div>
-        <div className="vert-center">
-          <a href="google.com">View on LinkedIn</a>
-        </div>
         <div>
           <Text type="secondary">{post.date}</Text>
         </div>

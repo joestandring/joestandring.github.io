@@ -11,7 +11,7 @@ import Tags from '../../data/tags.json';
 
 const { Title, Text } = Typography;
 
-function Project() {
+function Project(props) {
   const [project, setProject] = useState();
   const { route } = useParams();
 
@@ -24,6 +24,9 @@ function Project() {
   if (project != null) {
     const tags = [];
 
+    // eslint-disable-next-line react/prop-types
+    const { windowWidth } = props;
+
     project.tags.forEach((tagName) => {
       tags.push(Tags.find((tag) => tag.name === tagName));
     });
@@ -32,15 +35,31 @@ function Project() {
       <Tag color={tag.color}>{tag.name}</Tag>
     ));
 
-    return (
-      <>
-        <div className="vert-center">
+    const ProjectImage = () => {
+      if (windowWidth > 600) {
+        return (
           <img
             className="project-image"
             src={`/${project.thumb}`}
             alt={project.name}
             width="60%"
           />
+        );
+      }
+      return (
+        <img
+          className="project-image"
+          src={`/${project.thumb}`}
+          alt={project.name}
+          width="100%"
+        />
+      );
+    };
+
+    return (
+      <>
+        <div className="vert-center">
+          <ProjectImage />
         </div>
         <Title className="center-text">{project.name}</Title>
         <div className="center-text">

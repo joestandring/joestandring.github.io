@@ -37,7 +37,7 @@ function App() {
             </Content>
           </Route>
           <Route path="/project/:route">
-            <Content className="content-style">
+            <Content className="content-style" windowWidth={windowWidth}>
               <Project />
             </Content>
           </Route>
