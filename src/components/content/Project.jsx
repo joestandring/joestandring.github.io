@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import {
   Typography,
@@ -24,7 +25,6 @@ function Project(props) {
   if (project != null) {
     const tags = [];
 
-    // eslint-disable-next-line react/prop-types
     const { windowWidth } = props;
 
     project.tags.forEach((tagName) => {
@@ -94,5 +94,9 @@ function Project(props) {
     <Spin size="large" />
   );
 }
+
+Project.propTypes = {
+  windowWidth: PropTypes.number.isRequired,
+};
 
 export default Project;

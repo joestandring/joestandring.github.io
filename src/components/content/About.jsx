@@ -1,6 +1,6 @@
-/* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 import React from 'react';
+import PropTypes from 'prop-types';
 import {
   Typography,
   Row,
@@ -263,5 +263,10 @@ function About(props) {
     </div>
   );
 }
+
+About.propTypes = {
+  windowWidth: PropTypes.number.isRequired,
+  parentCallback: PropTypes.func.isRequired,
+};
 
 export default About;

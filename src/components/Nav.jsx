@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import {
   Menu,
   Row,
@@ -20,7 +21,6 @@ const { Title } = Typography;
 function Nav(props) {
   const [drawerVisible, setDrawerVisible] = useState(false);
 
-  // eslint-disable-next-line react/prop-types
   const { windowWidth } = props;
 
   const scrollWithOffset = (el) => {
@@ -143,5 +143,9 @@ function Nav(props) {
     </Row>
   );
 }
+
+Nav.propTypes = {
+  windowWidth: PropTypes.number.isRequired,
+};
 
 export default Nav;

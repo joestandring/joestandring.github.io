@@ -1,10 +1,8 @@
-/* eslint-disable jsx-a11y/no-static-element-interactions */
-/* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable array-callback-return */
-/* eslint-disable react/prop-types */
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable consistent-return */
 import React, { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import {
   Typography,
@@ -104,5 +102,9 @@ function Portfolio(props) {
     </div>
   );
 }
+
+Portfolio.propTypes = {
+  selectedTag: PropTypes.string.isRequired,
+};
 
 export default Portfolio;

@@ -7,20 +7,17 @@ const { Title } = Typography;
 const { Meta } = Card;
 
 function Blog() {
-  // eslint-disable-next-line arrow-body-style
-  const projects = Data.map((data) => {
-    return (
-      <Link to={`/blog/${data.route}`}>
-        <Card
-          hoverable
-          cover={<img alt={data.title} src={data.thumb} />}
-          className="blog-card"
-        >
-          <Meta title={data.title} description={data.date} />
-        </Card>
-      </Link>
-    );
-  });
+  const projects = Data.map((data) => (
+    <Link to={`/blog/${data.route}`}>
+      <Card
+        hoverable
+        cover={<img alt={data.title} src={data.thumb} />}
+        className="blog-card"
+      >
+        <Meta title={data.title} description={data.date} />
+      </Card>
+    </Link>
+  ));
 
   return (
     <div id="blog">
