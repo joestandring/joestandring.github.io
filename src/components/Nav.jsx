@@ -124,6 +124,21 @@ function Nav(props) {
             Blog
           </div>
         </HashLink>
+        <a target="_blank" href="https://github.com/joestandring" rel="noreferrer">
+          <div className="mobile-nav-item">
+            GitHub
+          </div>
+        </a>
+        <a target="_blank" href="https://linkedin.com/in/joestandring" rel="noreferrer">
+          <div className="mobile-nav-item">
+            LinkedIn
+          </div>
+        </a>
+        <a target="_blank" href="https://twitter.com/pandaontoast" rel="noreferrer">
+          <div className="mobile-nav-item">
+            Twitter
+          </div>
+        </a>
       </Drawer>
     </Row>
   );

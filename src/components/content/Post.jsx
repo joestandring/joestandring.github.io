@@ -15,7 +15,6 @@ function Post() {
     setPost(GetPost(route));
   }, route);
 
-  // TODO: Fix styling and linkedin route to correct place
   if (post != null) {
     return (
       <>
