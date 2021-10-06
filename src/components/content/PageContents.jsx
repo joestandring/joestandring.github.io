@@ -17,7 +17,7 @@ function PageContents(props) {
     <>
       <About parentCallback={callbackFunction} windowWidth={windowWidth} />
       <Portfolio selectedTag={tag} />
-      <Blog />
+      <Blog windowWidth={windowWidth} />
     </>
   );
 }
