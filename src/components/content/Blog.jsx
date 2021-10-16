@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { Typography, Card } from 'antd';
 import Data from '../../data/blog.json';
@@ -7,15 +6,12 @@ import Data from '../../data/blog.json';
 const { Title } = Typography;
 const { Meta } = Card;
 
-function Blog(props) {
-  const { windowWidth } = props;
-
+function Blog() {
   const projects = Data.map((data) => (
     <Link to={`/blog/${data.route}`}>
       <Card
         hoverable
         cover={<img alt={data.title} src={data.thumb} />}
-        className={windowWidth > 600 ? 'blog-card' : 'blog-card-mobile'}
       >
         <Meta title={data.title} description={data.date} />
       </Card>
@@ -29,9 +25,5 @@ function Blog(props) {
     </>
   );
 }
-
-Blog.propTypes = {
-  windowWidth: PropTypes.number.isRequired,
-};
 
 export default Blog;

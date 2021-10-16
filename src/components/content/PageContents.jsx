@@ -13,12 +13,21 @@ function PageContents(props) {
     setTag(data);
   };
 
+  if (windowWidth < 1300) {
+    return (
+      <>
+        <About parentCallback={callbackFunction} windowWidth={windowWidth} />
+        <Portfolio selectedTag={tag} />
+        <Blog />
+      </>
+    );
+  }
   return (
-    <>
+    <div className="wide-window">
       <About parentCallback={callbackFunction} windowWidth={windowWidth} />
       <Portfolio selectedTag={tag} />
-      <Blog windowWidth={windowWidth} />
-    </>
+      <Blog />
+    </div>
   );
 }
 
