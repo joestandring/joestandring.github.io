@@ -25037,10 +25037,20 @@ body {
 .center-text {
   text-align: center;
 }
+.blog {
+  margin: 10px;
+  position: relative;
+  transition: 0.5s ease;
+  display: inline-block;
+}
+.blog img {
+  height: 350px;
+  width: 540px;
+  object-fit: cover;
+}
 .projects {
   margin: 10px;
   margin-bottom: 0;
-  margin-top: 10px;
   position: relative;
   transition: 0.5s ease;
   display: inline-block;
@@ -25055,7 +25065,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  height: 30%;
+  height: 40%;
   width: 100%;
   opacity: 0;
   background-color: black;
@@ -25128,14 +25138,7 @@ body {
   height: 64px;
   width: 64px;
 }
-.blog-card {
-  width: 70%;
-}
-.blog-card-mobile {
-  width: 100%;
-  margin-bottom: 15px;
-}
 .wide-window {
-  width: 1210px;
+  width: 85%;
   margin: auto;
 }

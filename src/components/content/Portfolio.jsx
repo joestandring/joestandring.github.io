@@ -44,13 +44,11 @@ function Portfolio(props) {
     }
   }).map((data) => (
     <Link to={`/project/${data.route}`}>
-      <div className="img-link">
-        <div className="projects">
-          <img src={data.thumb} alt={data.name} />
-          <div className="overlay">
-            <div className="overlay-text">
-              <h3 className="overlay-text-heading">{data.name}</h3>
-            </div>
+      <div className="projects">
+        <img src={data.thumb} alt={data.name} />
+        <div className="overlay">
+          <div className="overlay-text">
+            <h3 className="overlay-text-heading">{data.name}</h3>
           </div>
         </div>
       </div>

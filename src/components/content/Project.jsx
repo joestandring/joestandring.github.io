@@ -55,7 +55,7 @@ function Project(props) {
         />
       );
     };
-
+    // https://github.com/remarkjs/react-markdown/issues/76
     return (
       <>
         <div className="vert-center">

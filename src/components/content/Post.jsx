@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import ReactMarkdown from 'react-markdown';
 import { Spin, Typography } from 'antd';
 import Data from '../../data/blog.json';
+import pizero from '../../data/posts/pizero.md';
 
 const { Title, Text } = Typography;
 
 function Post() {
   const [post, setPost] = useState();
+  const [markdown, setMarkdown] = useState();
   const { route } = useParams();
 
   const GetPost = (postRoute) => Data.find((p) => p.route === postRoute);
 
   useEffect(() => {
     setPost(GetPost(route));
+    fetch(pizero)
+      .then((res) => res.text())
+      .then((text) => setMarkdown(text));
   }, route);
 
   if (post != null) {
@@ -31,7 +37,7 @@ function Post() {
           <Text type="secondary">{post.date}</Text>
         </div>
         <div>
-          <Text>{post.content}</Text>
+          <ReactMarkdown>{markdown}</ReactMarkdown>
         </div>
       </>
     );

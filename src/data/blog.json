@@ -4,23 +4,20 @@
     "subtitle": "Now with React!",
     "route": "welcome",
     "thumb": "blog/welcome.png",
-    "date": "2nd September 2021",
-    "content": "Test content 2"
+    "date": "2nd September 2021"
   },
   {
     "title": "(Making) Android Privacy Guide",
     "subtitle": "Subheading asdasd",
     "route": "androidprivacy",
     "thumb": "blog/androidprivacy.png",
-    "date": "13th September 2020",
-    "content": "Test content asd"
+    "date": "13th September 2020"
   },
   {
     "title": "Pi Zero in an Original Super Famicom Controller",
-    "subtitle": "subheading ashaskldh",
+    "subtitle": "Running classic SNES games on (some of) the original hardware",
     "route": "pizero",
     "thumb": "blog/pizero.png",
-    "date": "26th January 2020",
-    "content": "Test content"
+    "date": "26th January 2020"
   }
 ]

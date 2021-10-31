@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Typography, Card } from 'antd';
+import { Typography, Card, Row } from 'antd';
 import Data from '../../data/blog.json';
 
 const { Title } = Typography;
@@ -12,6 +12,7 @@ function Blog() {
       <Card
         hoverable
         cover={<img alt={data.title} src={data.thumb} />}
+        className="blog"
       >
         <Meta title={data.title} description={data.date} />
       </Card>
@@ -19,10 +20,12 @@ function Blog() {
   ));
 
   return (
-    <>
+    <div id="blog">
       <Title className="center-text">Blog</Title>
-      {projects}
-    </>
+      <Row className="vert-center">
+        {projects}
+      </Row>
+    </div>
   );
 }
 
