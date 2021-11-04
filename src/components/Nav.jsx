@@ -33,7 +33,7 @@ function Nav(props) {
     setDrawerVisible(!drawerVisible);
   };
 
-  if (windowWidth > 600) {
+  if (windowWidth > 870) {
     return (
       <Row>
         <Col span={8}>
