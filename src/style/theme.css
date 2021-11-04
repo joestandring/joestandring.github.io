@@ -24909,6 +24909,11 @@ body {
   font-size: 33px;
   vertical-align: middle;
   margin-left: 7px;
+  transition: 0.2s;
+}
+.social-icon:hover {
+  color: #3D9970;
+  margin-top: -5px;
 }
 .cover {
   background-color: #000000;
@@ -25109,6 +25114,10 @@ body {
   color: #f2f2f2 !important;
   margin-top: 10.5px !important;
   margin-left: 18px !important;
+  transition: 0.2s !important;
+}
+.nav-logo:hover {
+  color: #3D9970 !important;
 }
 .top-padding {
   padding-top: 50px;
