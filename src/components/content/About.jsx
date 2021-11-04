@@ -72,10 +72,11 @@ function About(props) {
     );
 
     const Avi = () => (
-      <>
+      <div className="avi">
+        <div className="blob2" />
         <div className="blob" />
         <img className="about-img" src={me} alt="This is me!" />
-      </>
+      </div>
     );
 
     if (windowWidth > 600) {

@@ -24997,6 +24997,14 @@ body {
   width: 175px;
   position: absolute;
 }
+.blob2 {
+  background: linear-gradient(45deg, var(--primary) 0%, var(--third) 100%);
+  animation: morph2 11s ease-in-out infinite;
+  height: 190px;
+  transition: all 1.3s ease-in-out;
+  width: 190px;
+  position: absolute;
+}
 @keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
@@ -25011,8 +25019,27 @@ body {
     background: linear-gradient(45deg, var(--third) 0%, var(--secondary) 100%);
   }
 }
+@keyframes morph2 {
+  0% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background: linear-gradient(45deg, var(--third) 0%, var(--third) 100%);
+  }
+  50% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    background: linear-gradient(45deg, var(--third) 0%, var(--third) 100%);
+  }
+  100% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    background: linear-gradient(45deg, var(--third) 0%, var(--third) 100%);
+  }
+}
 .relative {
   position: relative;
+}
+.avi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about-img {
   border-radius: 50%;
@@ -25035,6 +25062,7 @@ body {
   font-size: 64px;
   margin: 16px;
   cursor: pointer;
+  transition: 0.2s;
 }
 .skill-icons:hover {
   transform: scale(1.1);
@@ -25126,6 +25154,10 @@ body {
   color: #f2f2f2;
   margin-right: 35px;
   margin-top: 14px;
+  transition: 0.2s;
+}
+.hamburger:hover {
+  color: #3D9970 !important;
 }
 .avi-mobile {
   margin-bottom: 200px;
