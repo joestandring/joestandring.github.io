@@ -25120,12 +25120,16 @@ body {
   color: #f2f2f2;
 }
 .search-bar {
+  width: 80%;
   margin-bottom: 25px;
-  width: 50%;
+}
+.project-tags {
+  padding-bottom: 15px;
 }
 .project-image {
   padding-top: 50px;
   padding-bottom: 30px;
+  width: 50%;
 }
 .footer {
   width: 100%;
@@ -25157,7 +25161,7 @@ body {
   color: #3D9970 !important;
 }
 .avi-mobile {
-  margin-bottom: 200px;
+  margin-bottom: 115px;
 }
 .skill-container {
   background-color: #e0e0e0;

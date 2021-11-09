@@ -92,7 +92,6 @@ function Portfolio(props) {
         <Input
           className="search-bar"
           placeholder="Search projects by name or use the icons above"
-          allowClear
           size="large"
           onChange={(e) => handleChange(e)}
         />
