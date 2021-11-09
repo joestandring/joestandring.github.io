@@ -127,4 +127,4 @@ yarn-debug.log*
 yarn-error.log*
 
 # compiled stylesheet
-/src/style/theme.css
+src/style/theme.css

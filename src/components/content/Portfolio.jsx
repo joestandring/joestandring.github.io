@@ -61,15 +61,17 @@ function Portfolio(props) {
 
   if (selectedTag != null) {
     return (
-      <>
+      <div id="portfolio">
         <Title className="center-text">Portfolio</Title>
-        <Input
-          className="search-bar"
-          placeholder="Search projects by name or use the icons above"
-          allowClear
-          size="large"
-          onChange={(e) => handleChange(e)}
-        />
+        <div className="vert-center">
+          <Input
+            className="search-bar"
+            placeholder="Search projects by name or use the icons above"
+            allowClear
+            size="large"
+            onChange={(e) => handleChange(e)}
+          />
+        </div>
         <Text>
           Searching projects tagged with:
           {' '}
@@ -80,19 +82,21 @@ function Portfolio(props) {
         <Row className="vert-center">
           {projects}
         </Row>
-      </>
+      </div>
     );
   }
   return (
     <div id="portfolio">
       <Title className="center-text">Portfolio</Title>
-      <Input
-        className="search-bar"
-        placeholder="Search projects by name or use the icons above"
-        allowClear
-        size="large"
-        onChange={(e) => handleChange(e)}
-      />
+      <div className="vert-center">
+        <Input
+          className="search-bar"
+          placeholder="Search projects by name or use the icons above"
+          allowClear
+          size="large"
+          onChange={(e) => handleChange(e)}
+        />
+      </div>
       <Row className="vert-center">
         {projects}
       </Row>

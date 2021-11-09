@@ -51,7 +51,7 @@ function Nav(props) {
           <Menu
             theme="dark"
             mode="horizontal"
-            className="nav-menu"
+            className="vert-center"
           >
             <HashLink smooth to="/#about" scroll={(el) => scrollWithOffset(el)}>
               <div className="nav-item">
