@@ -1,3 +1,5 @@
+/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable jsx-a11y/alt-text */
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import {
@@ -7,7 +9,7 @@ import {
   Divider,
 } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import imageSize from 'fs-imagesize';
 import Data from '../../data/portfolio.json';
 import Tags from '../../data/tags.json';
 
@@ -52,7 +54,11 @@ function Project() {
           <>
             <Divider />
             <div className="readme">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+              <ReactMarkdown
+                plugins={[[imageSize]]}
+              >
+                {markdown}
+              </ReactMarkdown>
             </div>
           </>
         );
