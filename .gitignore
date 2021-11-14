@@ -128,3 +128,4 @@ yarn-error.log*
 
 # compiled stylesheet
 src/style/theme.css
+package-lock.json
