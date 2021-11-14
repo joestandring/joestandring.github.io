@@ -60,7 +60,7 @@ function Portfolio(props) {
   };
 
   const InfoText = () => (
-    <Text className="center-text">
+    <p className="center-text">
       The following projects are those maintained/developed by me, and are mostly hosted on my
       <a target="_blank" href="https://github.com/joestandring" rel="noreferrer"> GitHub </a>
       . For my commercial portfolio, please see my
@@ -68,7 +68,7 @@ function Portfolio(props) {
       profile or contact me directly via
       <a href="mailto:joe@joestandring.com"> email</a>
       .
-    </Text>
+    </p>
   );
 
   if (selectedTag != null) {

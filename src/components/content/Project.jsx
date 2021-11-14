@@ -6,6 +6,8 @@ import {
   Tag,
   Divider,
 } from 'antd';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import Data from '../../data/portfolio.json';
 import Tags from '../../data/tags.json';
 
@@ -14,12 +16,24 @@ const { Title, Text } = Typography;
 function Project() {
   const [project, setProject] = useState();
   const { route } = useParams();
+  const [markdown, setMarkdown] = useState('');
 
   const GetProject = (projectRoute) => Data.find((p) => p.route === projectRoute);
 
   useEffect(() => {
     setProject(GetProject(route));
   }, route);
+
+  useEffect(() => {
+    fetch(`https://raw.githubusercontent.com/joestandring/${route}/master/README.md`)
+      .then((response) => (response.text()))
+      .then((text) => {
+        setMarkdown(text);
+      })
+      .catch(() => {
+        setMarkdown('');
+      });
+  }, project);
 
   if (project != null) {
     const tags = [];
@@ -32,20 +46,23 @@ function Project() {
       <Tag color={tag.color}>{tag.name}</Tag>
     ));
 
-    // https://github.com/remarkjs/react-markdown/issues/76
+    const Readme = () => {
+      if (markdown !== '404: Not Found') {
+        return (
+          <>
+            <Divider />
+            <div className="readme">
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>{markdown}</ReactMarkdown>
+            </div>
+          </>
+        );
+      }
+      return <></>;
+    };
+
     return (
-      <>
-        <div className="vert-center">
-          <img
-            className="project-image"
-            src={`/${project.thumb}`}
-            alt={project.name}
-          />
-        </div>
-        <Title className="center-text">{project.name}</Title>
-        <div className="center-text project-tags">
-          {projectTags}
-        </div>
+      <div className="wide-window">
+        <Title className="project-title">{project.name}</Title>
         <div className="center-text">
           <Text>
             {project.start}
@@ -58,16 +75,19 @@ function Project() {
         <div className="center-text">
           <Text>{project.org}</Text>
         </div>
-        <div className="center-text">
+        <div className="center-text new-line">
           <a href={project.link}>
             Link
           </a>
         </div>
-        <Divider />
-        <div className="center-text">
-          <Text>{project.desc}</Text>
+        <div className="center-text new-line">
+          {project.desc}
         </div>
-      </>
+        <div className="center-text">
+          {projectTags}
+        </div>
+        <Readme />
+      </div>
     );
   }
   return (

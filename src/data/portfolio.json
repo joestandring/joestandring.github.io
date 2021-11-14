@@ -41,7 +41,7 @@
   },
   {
     "name": "3D Pathfinding",
-    "route": "3d-pathfinding",
+    "route": "3D-pathfinding-demonstration",
     "thumb": "portfolio/pathfinding.png",
     "org": "Coventry University",
     "start": "Januray 2021",
@@ -59,7 +59,7 @@
   },
   {
     "name": "Public Library",
-    "route": "public-library",
+    "route": "library-backend",
     "thumb": "portfolio/public-library.png",
     "org": "Coventry University",
     "start": "October 2020",
@@ -102,6 +102,20 @@
     ]
   },
   {
+    "name": "Roundy Fish",
+    "route": "roundy-fish",
+    "thumb": "portfolio/roundy-fish.png",
+    "org": "Independent",
+    "start": "October 2021",
+    "end": "Present",
+    "desc": "A clone of nullxception's zsh roundy prompt for the fish shell",
+    "link": "https://github.com/joestandring/roundy-fish",
+    "tags": [
+      "BASH/Shell",
+      "GNU/Linux"
+    ]
+  },
+  {
     "name": "Android Privacy Guide",
     "route": "android-privacy-guide",
     "thumb": "portfolio/android.png",
@@ -119,7 +133,7 @@
   },
   {
     "name": "Theatre Booking System",
-    "route": "theatre-booking-system",
+    "route": "theatre-booking",
     "thumb": "portfolio/theatre.png",
     "org": "Coventry University",
     "start": "September 2020",
