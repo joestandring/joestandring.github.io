@@ -9,7 +9,6 @@ import {
   Divider,
 } from 'antd';
 import ReactMarkdown from 'react-markdown';
-import imageSize from 'fs-imagesize';
 import Data from '../../data/portfolio.json';
 import Tags from '../../data/tags.json';
 
@@ -55,7 +54,9 @@ function Project() {
             <Divider />
             <div className="readme">
               <ReactMarkdown
-                plugins={[[imageSize]]}
+                components={{
+                  img: (props) => <img {...props} style={{ maxWidth: '100%', display: 'block' }} />,
+                }}
               >
                 {markdown}
               </ReactMarkdown>
