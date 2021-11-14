@@ -9,6 +9,7 @@ import {
   Tabs,
   Popover,
 } from 'antd';
+import { HashLink } from 'react-router-hash-link';
 import {
   SiJavascript,
   SiCsharp,
@@ -52,6 +53,12 @@ function About(props) {
     props.parentCallback(tag);
   };
 
+  const scrollWithOffset = (el) => {
+    const yCoordinate = el.getBoundingClientRect().top + window.pageYOffset;
+    const yOffset = -85;
+    window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
+  };
+
   const Description = () => {
     const AboutText = () => (
       <Text>
@@ -59,10 +66,15 @@ function About(props) {
         <a target="_blank" href="https://www.generalandmedical.com/" rel="noreferrer"> General & Medical </a>
         based in Peterborough.
         I&apos;m a JavaScript and C# developer interested in all things web, open-source, and
-        Linux. I have skills in web and
-        native app development and have worked on projects using JavaScript, React, C#, shell
-        scripting, and Unity. I have a passion for making beautiful, functional, and clean
-        designs supported by reliable architechture.
+        Linux. I have industry experience in web, mobile, and
+        api development and have worked on open-source and commercial projects using
+        JavaScript, React, React Native, C#, .Net, and
+        {' '}
+        <HashLink smooth to="/#portfolio" scroll={(el) => scrollWithOffset(el)}>
+          more
+        </HashLink>
+        . I have a passion for making beautiful, functional, and clean
+        designs supported by reliable and performant backend architechture.
         You can get in touch with me by
         <a href="mailto:joe@joestandring.com"> email</a>
         , or view my

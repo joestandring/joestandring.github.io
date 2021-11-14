@@ -1,35 +1,5 @@
 [
   {
-    "name": "Projects at General & Medical",
-    "route": "genmed",
-    "thumb": "portfolio/genmed.png",
-    "org": "General & Medical",
-    "start": "July 2021",
-    "end": "Present",
-    "desc": "I am currently employed as a full-stack developer at General & Medical, where I work on a variety of projects with diverse tech stacks in a small team of developers. These include an ERP system used by staff built on ASP.NET and an SQL Server database, another ERP system using .NET and React, the public website built on ASP.NET, and a customer mobile application.",
-    "link": "https://www.generalandmedical.com/",
-    "tags": [
-      "JavaScript",
-      "C#",
-      "HTML5",
-      "CSS3",
-      "React",
-      "ASP.NET",
-      "npm",
-      "Git",
-      "Azure DevOps",
-      "SQL",
-      "Visual Studio Code",
-      "Frontend development",
-      "Backend development",
-      "API Development (OpenAPI)",
-      "Database management",
-      "Documentation",
-      "Software development life-cycles",
-      "Object-oriented programming"
-    ]
-  },
-  {
     "name": "This Website",
     "route": "this-website",
     "thumb": "portfolio/website.png",

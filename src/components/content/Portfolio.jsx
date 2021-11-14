@@ -59,10 +59,23 @@ function Portfolio(props) {
     setSelectedTag(null);
   };
 
+  const InfoText = () => (
+    <Text className="center-text">
+      The following projects are those maintained/developed by me, and are mostly hosted on my
+      <a target="_blank" href="https://github.com/joestandring" rel="noreferrer"> GitHub </a>
+      . For my commercial portfolio, please see my
+      <a target="_blank" href="https://linkedin.com/in/joestandring" rel="noreferrer"> LinkedIn </a>
+      profile or contact me directly via
+      <a href="mailto:joe@joestandring.com"> email</a>
+      .
+    </Text>
+  );
+
   if (selectedTag != null) {
     return (
       <div id="portfolio">
         <Title className="center-text">Portfolio</Title>
+        <InfoText />
         <div className="vert-center">
           <Input
             className="search-bar"
@@ -88,6 +101,7 @@ function Portfolio(props) {
   return (
     <div id="portfolio">
       <Title className="center-text">Portfolio</Title>
+      <InfoText />
       <div className="vert-center">
         <Input
           className="search-bar"
